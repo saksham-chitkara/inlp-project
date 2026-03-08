@@ -1,0 +1,1154 @@
+{
+  "e0f0cf16-5aa7-4e3f-a6ae-7e1ed05bbf59": {
+    "syllogism": "Not a single elephant is a professional sprinter. Every single individual who is an Olympic sprinter is a professional sprinter. It follows from this that a portion of Olympic sprinters are not elephants.",
+    "quasar_full": "s1 (Abstraction): \nLet X = single elephant, Y = professional sprinter, Z = Olympic sprinter.\n\ns2 (Formalisation): \nAll X are not Y. All Y are Z. Therefore, some Z are not X.\n\ns3 (Explanation): \nThe conclusion \"some Z are not X\" does not logically follow from the premises. The premises only state that all X are not Y and all Y are Z, but they do not provide any information about the relationship between Z and X.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "All X are not Y. All Y are Z. Therefore, some Z are not X.",
+    "quasar_answer": false
+  },
+  "89899917-ed94-40ec-8601-0b69da754a08": {
+    "syllogism": "There is no cat that is a bird. No birds are dogs whatsoever. It possible to conclude that no dog is a cat.",
+    "quasar_full": "s1 (Abstraction): \nLet X = cat, Y = bird, Z = dog.\n\ns2 (Formalisation): \nAll X are not Y. \nAll Y are not Z.\n\ns3 (Explanation): \nThe conclusion \"no dog is a cat\" is not logically implied by the premises. The premises only state that there is no cat that is a bird and no birds are dogs, but they do not provide any information about the relationship between dogs and cats.\n\ns4 (Answering): \nThe conclusion does not follow logically from the premises, so the syllogism is invalid.",
+    "quasar_s2": "All X are not Y. \nAll Y are not Z.",
+    "quasar_answer": false
+  },
+  "a65f60f9-313a-4fb1-90fc-6d5327918778": {
+    "syllogism": "Nothing that is a bird can fly. It is the case that some eagles cannot fly. The only conclusion is that some eagles are not birds.",
+    "quasar_full": "s1 (Abstraction): \nLet X = bird, Y = fly, Z = eagle.\nThe syllogism becomes: \nNothing that is a bird can fly. Some eagles cannot fly. Some eagles are not birds.\n\ns2 (Formalisation): \nAll X are not Y. Some Z are not Y. ∴ Some Z are not X.\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The first premise states that nothing that is a bird can fly, but it does not imply that all eagles cannot fly. The second premise only states that some eagles cannot fly, which does not necessarily mean they are not birds.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are not Y. Some Z are not Y. ∴ Some Z are not X.",
+    "quasar_answer": false
+  },
+  "7456ee77-ef88-4f4d-955c-b525b4668845": {
+    "syllogism": "Nothing that is a plant is an animal. At least one fruit is a plant. At least one fruit is an animal.",
+    "quasar_full": "s1 (Abstraction): \nLet X = plant, Y = animal, Z = fruit.\nThe syllogism becomes: \nNothing that is X is a Y. At least one Z is an X. At least one Z is a Y.\n\ns2 (Formalisation): \nAll X are not Y. Some Z are X. Some Z are Y.\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The first premise states that nothing that is X is a Y, but the second premise states that some Z are X, which contradicts the first premise.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are not Y. Some Z are X. Some Z are Y.",
+    "quasar_answer": false
+  },
+  "51a7724d-80e2-4ee0-b45f-a39eedec648f": {
+    "syllogism": "There is no person who is smart who is also a slow runner. There is no athlete who is a slow runner. This means that athletes are not smart people.",
+    "quasar_full": "s1 (Abstraction): \nLet X = smart person, Y = athlete, Z = slow runner.\nThe syllogism can be rewritten as: There is no X who is a Z. There is no Y who is a Z. This means that Y are not X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: \n1. ∀x (X(x) → ¬Z(x))\n2. ∀y (Y(y) → ¬Z(y))\n3. ∴ ∀y Y(y) → ¬X(y)\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that there is no smart person who is a slow runner and no athlete who is a slow runner. However, this does not imply that athletes are not smart people. It only implies that athletes are not slow runners.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: \n1. ∀x (X(x) → ¬Z(x))\n2. ∀y (Y(y) → ¬Z(y))\n3. ∴ ∀y Y(y) → ¬X(y)",
+    "quasar_answer": false
+  },
+  "f1bb008a-0410-432b-b478-a34378d21244": {
+    "syllogism": "It is true that no stars are cold. A few planets are cold. Thus, all planets are stars.",
+    "quasar_full": "s1 (Abstraction): \nLet X = stars, Y = cold, Z = planets.\n\ns2 (Formalisation): \nAll X are not Y. A few Z are Y. Thus, all Z are X.\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that no stars are cold and a few planets are cold, but this does not imply that all planets are stars.\n\ns4 (Answering): The answer is: invalid.",
+    "quasar_s2": "All X are not Y. A few Z are Y. Thus, all Z are X.",
+    "quasar_answer": false
+  },
+  "8b7e4bc2-dc6f-4207-bd39-e15bde988ac5": {
+    "syllogism": "Every single person who is a doctor is a healthcare worker. An engineer is not a healthcare worker. From this, it can be concluded that no engineer is a doctor.",
+    "quasar_full": "s1 (Abstraction): \nLet X = doctor, Y = healthcare worker, Z = engineer.\nThe syllogism becomes: Every X is Y, Z is not Y.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∀x (X(x) → Y(x)) ∧ ∼Y(Z).\n\ns3 (Explanation): \nThe conclusion \"no engineer is a doctor\" can be represented as ∀z ∼X(z). However, the premises do not provide any information about the relationship between engineers and doctors. The premises only relate doctors to healthcare workers and engineers to healthcare workers. Therefore, the conclusion does not logically follow from the premises.\n\ns4 (Answering): The answer is: invalid.",
+    "quasar_s2": "The formal symbolic structure is: ∀x (X(x) → Y(x)) ∧ ∼Y(Z).",
+    "quasar_answer": false
+  },
+  "6560647d-6e13-4095-bbbb-504011ff9a2e": {
+    "syllogism": "Not a single thing that is a building is a tree. A portion of the things that are houses are buildings. Thus, it is clear that some houses are not trees.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"a thing that is a building\", Y be \"a tree\", Z be \"a house\".\n\ns2 (Formalisation): \nAll X are not Y. Some Z are X.\n\ns3 (Explanation): \nThe conclusion \"some houses are not trees\" follows logically from the premises. If all buildings are not trees and some houses are buildings, then it logically follows that some houses are not trees.\n\ns4 (Answering): \nvalid",
+    "quasar_s2": "All X are not Y. Some Z are X.",
+    "quasar_answer": true
+  },
+  "a91ce532-15af-4906-a690-b0ff4d4ce829": {
+    "syllogism": "It is true that no shirts are pants. All t-shirts are things that are shirts. Therefore, some t-shirts are not pants.",
+    "quasar_full": "s1 (Abstraction): \nLet X = shirts, Y = pants, Z = t-shirts.\n\ns2 (Formalisation): \nAll X are not Y. All Z are X.\n\ns3 (Explanation): \nThe conclusion \"some Z are not Y\" does not logically follow from the premises. The premises only state that all shirts are not pants and all t-shirts are shirts, but they do not provide information about the relationship between t-shirts and pants.\n\ns4 (Answering): \nThe syllogism is invalid.",
+    "quasar_s2": "All X are not Y. All Z are X.",
+    "quasar_answer": false
+  },
+  "243ec258-430d-4a22-9eec-ee08ff723294": {
+    "syllogism": "There are no birds that are mammals. No bats are considered birds. Some bats are not mammals.",
+    "quasar_full": "s1 (Abstraction): \nLet X = birds, Y = mammals, Z = bats.\nThe syllogism becomes: There are no X that are Y. No Z are X. Some Z are not Y.\n\ns2 (Formalisation): \nAll X are not Y. No Z are X. ∴ Some Z are not Y.\n\ns3 (Explanation): \nThe conclusion follows logically from the premises. If there are no birds that are mammals, and bats are not birds, then it logically follows that some bats are not mammals.\n\ns4 (Answering): \nThe answer is: valid.",
+    "quasar_s2": "All X are not Y. No Z are X. ∴ Some Z are not Y.",
+    "quasar_answer": true
+  },
+  "4f6a051b-b6bc-401d-bf4e-c77b4b3fe833": {
+    "syllogism": "There is no item that is an insect which is also an animal. Of the items that are ants, a portion of them are animals. It must be the case that some ants are not insects.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"ant\", Y be \"insect\", Z be \"animal\".\n\ns2 (Formalisation): \nPremise 1: ∀x (Insect(x) → ¬Animal(x))\nPremise 2: ∃x (Ant(x) ∧ Animal(x))\nConclusion: ∃x (Ant(x) ∧ ¬Insect(x))\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that no insect is an animal and some ants are animals, but this does not imply that some ants are not insects.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "Premise 1: ∀x (Insect(x) → ¬Animal(x))\nPremise 2: ∃x (Ant(x) ∧ Animal(x))\nConclusion: ∃x (Ant(x) ∧ ¬Insect(x))",
+    "quasar_answer": false
+  },
+  "aad00fc7-00e9-4fff-88b4-93ad92f098a3": {
+    "syllogism": "A tree cannot be a plant. A number of trees are oaks. From this, we can conclude that some oaks are not plants.",
+    "quasar_full": "s1 (Abstraction): \nLet X = tree, Y = plant, Z = oak.\nThe syllogism becomes: A tree cannot be a plant. Some X are Z. From this, we can conclude that some Z are not Y.\n\ns2 (Formalisation): \nThe formal symbolic structure is:\n1. ∀x (x is a tree → ¬x is a plant)\n2. ∃x (x is a tree ∧ x is an oak)\n∴ ∃x (x is an oak ∧ x is not a plant)\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The first premise only states that a tree cannot be a plant, but it does not imply that some oaks are not plants. The second premise only states that some trees are oaks, but it does not provide any information about the relationship between oaks and plants.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is:\n1. ∀x (x is a tree → ¬x is a plant)\n2. ∃x (x is a tree ∧ x is an oak)\n∴ ∃x (x is an oak ∧ x is not a plant)",
+    "quasar_answer": false
+  },
+  "834712fc-57e0-4e34-9a51-10ff1a43bf8e": {
+    "syllogism": "Among the creatures that are mammals, some are dogs. Every single creature that is a mammal is an animal. It must be the case that not a single animal is a dog.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"creatures that are mammals,\" Y be \"dogs,\" and Z be \"animals.\"\n\ns2 (Formalisation): \nAll X are Z (All mammals are animals).\nSome Y are X (Some dogs are mammals).\n∴ Not all Z are Y (It must be the case that not a single animal is a dog).\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that some dogs are mammals and all mammals are animals, but this does not imply that not a single animal is a dog.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "All X are Z (All mammals are animals).\nSome Y are X (Some dogs are mammals).\n∴ Not all Z are Y (It must be the case that not a single animal is a dog).",
+    "quasar_answer": false
+  },
+  "e4563324-5364-418d-a8b7-ca1686a8df61": {
+    "syllogism": "There is no such thing as a frog that is a mammal. Nothing that is a reptile is a mammal. It can be concluded that no frog is a reptile.",
+    "quasar_full": "s1 (Abstraction): \nLet X = frog, Y = mammal, Z = reptile.\n\ns2 (Formalisation): \nAll X are not Y. \nAll Z are not Y.\n\ns3 (Explanation): \nThe conclusion \"no X is Z\" logically follows from the premises. If nothing that is Z is Y, and there is no X that is Y, then it can be inferred that no X is Z.\n\ns4 (Answering): \nvalid",
+    "quasar_s2": "All X are not Y. \nAll Z are not Y.",
+    "quasar_answer": true
+  },
+  "f1a7617c-3f1d-4aa1-a685-e2ed53f46d3c": {
+    "syllogism": "Individuals who are writers are not, in any way, people. Every writer is an individual who writes books. People are not writers.",
+    "quasar_full": "s1 (Abstraction): \nLet X = individuals who are writers, Y = people, Z = writers.\n \ns2 (Formalisation): \nAll X are not Z. \nAll X are Y. \nAll Y are not Z.\n\ns3 (Explanation): \nThe conclusion \"Individuals who are writers are not, in any way, people\" is equivalent to \"All X are not Y\". However, the premises do not logically lead to this conclusion. The premises state that all X are Y and all Y are not Z, but it does not follow that all X are not Y.\n\ns4 (Answering): The syllogism is invalid.",
+    "quasar_s2": "All X are not Z. \nAll X are Y. \nAll Y are not Z.",
+    "quasar_answer": false
+  },
+  "a3af7489-e377-4235-9aca-a48018f2446a": {
+    "syllogism": "Metals are in no way elements. There exist no elements which are solids. It is the case that no metal is a solid.",
+    "quasar_full": "s1 (Abstraction): \nLet X = metals, Y = elements, Z = solid.\n \ns2 (Formalisation): \nAll X are not Y. \nThere exist no Y that are Z. \n∴ No X is Z.\n\ns3 (Explanation): \nThe conclusion follows logically from the premises. If there are no elements that are solids, and metals are not elements, then it logically follows that no metal is a solid.\n\ns4 (Answering): \nvalid",
+    "quasar_s2": "All X are not Y. \nThere exist no Y that are Z. \n∴ No X is Z.",
+    "quasar_answer": true
+  },
+  "cb83372b-29bf-4c18-9077-b050fd6f5e21": {
+    "syllogism": "Every single item of furniture sings opera. There are no chairs that are not furniture. A number of chairs sing opera.",
+    "quasar_full": "s1 (Abstraction): \nLet X = item of furniture, Y = sings opera, Z = chair\nSo, the syllogism becomes: Every X is Y, There are no Z that are not X, Some Z are Y.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∀X Y, ∀Z ¬Z¬X, ∃Z Y\n\ns3 (Explanation): \nThe conclusion \"Some Z are Y\" logically follows from the premises. If every X is Y and every Z is X, then it's reasonable to conclude that some Z are Y.\n\ns4 (Answering): The answer is: valid",
+    "quasar_s2": "The formal symbolic structure is: ∀X Y, ∀Z ¬Z¬X, ∃Z Y",
+    "quasar_answer": true
+  },
+  "94944427-7a45-495b-82f6-3b2b8d53bf18": {
+    "syllogism": "There are no plants that are animals. It is also true that no metals are plants. Therefore, it is argued that there are no metals which are animals.",
+    "quasar_full": "s1 (Abstraction): \nLet X = plants, Y = animals, Z = metals.\nThe syllogism becomes: There are no X that are Y. There are no Z that are X. Therefore, there are no Z that are Y.\n\ns2 (Formalisation): \nThe formal symbolic structure is: \n∼∃YX (There are some X that are Y)\n∼∃XZ (There are some Z that are X)\n∴ ∼∃YZ (There are some Z that are Y)\n\ns3 (Explanation): \nThe conclusion follows logically from the premises because if there are no X that are Y and there are no Z that are X, then it logically follows that there are no Z that are Y.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "The formal symbolic structure is: \n∼∃YX (There are some X that are Y)\n∼∃XZ (There are some Z that are X)\n∴ ∼∃YZ (There are some Z that are Y)",
+    "quasar_answer": true
+  },
+  "70312fe3-c315-41e6-af39-09210c44f6f6": {
+    "syllogism": "Anything that is a planet orbits a star. Every single thing on Earth is a planet. There exists at least one part of Earth that orbits a star.",
+    "quasar_full": "s1 (Abstraction): \nLet X = anything that is a planet, Y = orbits a star, Z = every single thing on Earth.\nThe syllogism becomes: All X are Y, All Z are X, Therefore, All Z are Y.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∀X (X → Y) ∧ ∀Z (Z → X) ∴ ∀Z (Z → Y)\n\ns3 (Explanation): \nThe conclusion follows logically from the premises because if every single thing on Earth (Z) is a planet (X) and every planet (X) orbits a star (Y), then every single thing on Earth (Z) orbits a star (Y).\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "The formal symbolic structure is: ∀X (X → Y) ∧ ∀Z (Z → X) ∴ ∀Z (Z → Y)",
+    "quasar_answer": true
+  },
+  "b1769aba-611d-4aa9-a25a-394c14d97b59": {
+    "syllogism": "There are no lions that are gazelles. It is also the case that no tiger is a gazelle. Therefore, no tiger is a lion.",
+    "quasar_full": "s1 (Abstraction): \nLet X = lion, Y = gazelle, Z = tiger.\nThe syllogism becomes: There are no X that are Y. There are no Z that are Y. Therefore, there are no Z that are X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: \n∀X ¬(X is a Y), ∀Z ¬(Z is a Y) ∴ ∀Z ¬(Z is an X)\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that there are no lions that are gazelles and no tigers that are gazelles, but this does not imply that there are no tigers that are lions.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: \n∀X ¬(X is a Y), ∀Z ¬(Z is a Y) ∴ ∀Z ¬(Z is an X)",
+    "quasar_answer": false
+  },
+  "fc39ab38-fc18-44b4-a8e7-ddf8224f998b": {
+    "syllogism": "Scientists are in no way professors. There exist no professors that are academics. It is the case that no scientist is an academic.",
+    "quasar_full": "s1 (Abstraction): \nLet X = Scientists, Y = Professors, Z = Academics.\nThe syllogism becomes: \nX are not Y. There exist no Y that are Z. It is the case that no X is Z.\n\ns2 (Formalisation): \nAll X are not Y. There exist no Y that are Z. ∴ No X is Z.\n\ns3 (Explanation): \nThe conclusion follows logically from the premises. If there are no professors that are academics, and scientists are not professors, then it logically follows that there are no scientists that are academics.\n\ns4 (Answering): \nThe answer is: valid.",
+    "quasar_s2": "All X are not Y. There exist no Y that are Z. ∴ No X is Z.",
+    "quasar_answer": true
+  },
+  "cc371423-3ea9-4d03-a41b-e6538b858dfa": {
+    "syllogism": "There are no cows that are reptiles. It is not true that any lizard is a cow. It is the case that some lizards are cows.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"cows,\" Y be \"reptiles,\" and Z be \"lizards.\"\n\ns2 (Formalisation): \n1. All X are not Y (All cows are not reptiles).\n2. It is not the case that any Z is X (It is not true that any lizard is a cow).\n3. Some Z are X (Some lizards are cows).\n\ns3 (Explanation): \nThe conclusion \"Some Z are X\" contradicts the first premise \"All X are not Y.\" This is a direct contradiction, making the conclusion not logically follow from the premises.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "1. All X are not Y (All cows are not reptiles).\n2. It is not the case that any Z is X (It is not true that any lizard is a cow).\n3. Some Z are X (Some lizards are cows).",
+    "quasar_answer": false
+  },
+  "4a729564-eaeb-4ad0-ad1e-6650bfe992bf": {
+    "syllogism": "It is true that some books contain pictures. Every single book is a printed material. Therefore, some printed materials have pictures.",
+    "quasar_full": "s1 (Abstraction): \nLet X = books, Y = contain pictures, Z = printed materials.\n\ns2 (Formalisation): \nAll X are Z (Every single book is a printed material).\nSome X are Y (It is true that some books contain pictures).\n∴ Some Z are Y (Therefore, some printed materials have pictures).\n\ns3 (Explanation): \nThe conclusion logically follows from the premises because the first premise establishes a universal relationship between X and Z, and the second premise establishes an existential relationship between X and Y. This allows us to infer an existential relationship between Z and Y.\n\ns4 (Answering): \nThe answer is: valid.",
+    "quasar_s2": "All X are Z (Every single book is a printed material).\nSome X are Y (It is true that some books contain pictures).\n∴ Some Z are Y (Therefore, some printed materials have pictures).",
+    "quasar_answer": true
+  },
+  "8f2f99ab-25fb-469e-9cfc-71467c3cccf3": {
+    "syllogism": "Every single human is a primate. The entire collection of humans is a subset of people. A portion of people are not primates.",
+    "quasar_full": "s1 (Abstraction): \nLet X = human, Y = primate, Z = people.\nThe syllogism becomes: Every X is Y, The entire collection of X is a subset of Z, A portion of Z are not Y.\n\ns2 (Formalisation): \nAll X are Y, ∀x (X(x) → Y(x))\n∀x (X(x) → Z(x))\n∃z (Z(z) ∧ ¬Y(z))\n\ns3 (Explanation): \nThe conclusion does not follow logically from the premises. The first premise states that every human is a primate, but the second premise only states that humans are a subset of people, which does not provide information about the relationship between people and primates.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are Y, ∀x (X(x) → Y(x))\n∀x (X(x) → Z(x))\n∃z (Z(z) ∧ ¬Y(z))",
+    "quasar_answer": false
+  },
+  "963c540a-971f-4c75-8b51-abb3a504987c": {
+    "syllogism": "Every single animal is a cloud. All animals are dogs. This means that every single dog is a cloud.",
+    "quasar_full": "s1 (Abstraction): \nLet X = animal, Y = cloud, Z = dog.\n\ns2 (Formalisation): \nAll X are Y (Every single animal is a cloud).\nAll X are Z (All animals are dogs).\n∴ All Z are Y (This means that every single dog is a cloud).\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that animals are clouds and animals are dogs, but it does not imply that dogs are clouds.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "All X are Y (Every single animal is a cloud).\nAll X are Z (All animals are dogs).\n∴ All Z are Y (This means that every single dog is a cloud).",
+    "quasar_answer": false
+  },
+  "54dc1377-0261-4c16-af95-fa6e837b6540": {
+    "syllogism": "Oxygen is a thing that is an element. It is impossible for water to be an element. Nothing that is water is oxygen.",
+    "quasar_full": "s1 (Abstraction): \nLet X = Oxygen, Y = element, Z = water\nSo, the syllogism becomes: \nX is Y. It is impossible for Z to be Y. Nothing that is Z is X.\n\ns2 (Formalisation): \nAll X are Y. No Z is Y. No Z is X.\n\ns3 (Explanation): \nThe conclusion follows logically from the premises. If something cannot be an element (Z is not Y), and nothing that is Z is X, then it's reasonable to conclude that X (oxygen) is not Z (water).\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "All X are Y. No Z is Y. No Z is X.",
+    "quasar_answer": true
+  },
+  "791a7c05-096b-496f-a635-c389138ae2d3": {
+    "syllogism": "There are no liquids that are solids. Not one gas is a solid. It follows that some gases are not liquids.",
+    "quasar_full": "s1 (Abstraction): \nLet X = liquids, Y = solids, Z = gases.\n\ns2 (Formalisation): \nAll X are not Y. \nNo Z are Y.\n\ns3 (Explanation): \nThe conclusion \"some gases are not liquids\" does not logically follow from the premises. The premises only state that there are no liquids that are solids and no gases that are solids, but they do not provide information about the relationship between gases and liquids.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "All X are not Y. \nNo Z are Y.",
+    "quasar_answer": false
+  },
+  "4f37d2a5-f2d2-4615-982a-331b9cbe9be2": {
+    "syllogism": "There are no animals that are also plants. Of the items that are mammals, a portion are not plants. It follows that some mammals are not animals.",
+    "quasar_full": "s1 (Abstraction): \nLet X = animals, Y = plants, Z = mammals.\nThe syllogism becomes: There are no X that are also Y. Of the items that are Z, a portion are not Y. It follows that some Z are not X.\n\ns2 (Formalisation): \nAll X are not Y. Some Z are not Y. ∴ Some Z are not X.\n\ns3 (Explanation): \nThe conclusion follows logically from the premises. If all animals are not plants, and some mammals are not plants, then it logically follows that some mammals are not animals.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "All X are not Y. Some Z are not Y. ∴ Some Z are not X.",
+    "quasar_answer": true
+  },
+  "67a4f302-fe12-4347-a5a7-125373ae6e0b": {
+    "syllogism": "Among those who are students, some have learned to code. All who have learned to code are considered to have learned a skill. It follows that some of those who have learned a skill are students.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"students,\" Y be \"those who have learned to code,\" and Z be \"those who have learned a skill.\"\n\ns2 (Formalisation): \nPremise 1: Some Y are X (Some who have learned to code are students)\nPremise 2: All Y are Z (All who have learned to code are considered to have learned a skill)\nConclusion: Some Z are X (Some of those who have learned a skill are students)\n\ns3 (Explanation): \nThe conclusion logically follows from the premises. The first premise establishes a subset relationship between Y and X, and the second premise establishes a subset relationship between Y and Z. Therefore, by transitivity, there is a subset relationship between Z and X.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "Premise 1: Some Y are X (Some who have learned to code are students)\nPremise 2: All Y are Z (All who have learned to code are considered to have learned a skill)\nConclusion: Some Z are X (Some of those who have learned a skill are students)",
+    "quasar_answer": true
+  },
+  "4c6df3a7-885f-4003-ba84-8a17fb279f9d": {
+    "syllogism": "It is not true that any vegetables are computers. It is not true that any vegetables are animals. This means computers are not animals.",
+    "quasar_full": "s1 (Abstraction): \nLet X = computers, Y = animals, Z = vegetables.\n\ns2 (Formalisation): \nPremise 1: ¬∀Z (Z are X)\nPremise 2: ¬∀Z (Z are Y)\nConclusion: ∀X (X are not Y)\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that there are no vegetables that are computers and no vegetables that are animals, but this does not imply that computers are animals.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "Premise 1: ¬∀Z (Z are X)\nPremise 2: ¬∀Z (Z are Y)\nConclusion: ∀X (X are not Y)",
+    "quasar_answer": false
+  },
+  "ed732d53-d206-41f3-a3dc-8c03dcc9d37b": {
+    "syllogism": "Not a single car is an airplane. It is also true that no bicycle is a car. It follows that no bicycle is an airplane.",
+    "quasar_full": "s1 (Abstraction): \nLet X = airplane, Y = car, Z = bicycle.\n\ns2 (Formalisation): \nAll X are not Y. \nAll Y are not Z.\n\ns3 (Explanation): \nThe conclusion \"no bicycle is an airplane\" is not logically implied by the premises. The premises only state that airplanes are not cars and cars are not bicycles, but they do not provide information about the relationship between bicycles and airplanes.\n\ns4 (Answering): invalid",
+    "quasar_s2": "All X are not Y. \nAll Y are not Z.",
+    "quasar_answer": false
+  },
+  "d44227b2-2b2e-4c8c-92c9-3415b1323d6a": {
+    "syllogism": "Insects are in no way mammals. There exist no mammals that are reptiles. It is the case that no insect is a reptile.",
+    "quasar_full": "s1 (Abstraction): \nLet X = insects, Y = mammals, Z = reptiles.\n\ns2 (Formalisation): \nPremise 1: All X are not Y.\nPremise 2: No Y are Z.\nConclusion: No X are Z.\n\ns3 (Explanation): \nThe conclusion logically follows from the premises. If all X are not Y, and no Y are Z, then it logically follows that no X are Z.\n\ns4 (Answering): \nThe answer is: valid.",
+    "quasar_s2": "Premise 1: All X are not Y.\nPremise 2: No Y are Z.\nConclusion: No X are Z.",
+    "quasar_answer": true
+  },
+  "eb9e2873-3e72-42ff-a4de-c0e0f0036415": {
+    "syllogism": "Some creatures that are lizards are not animals. Anything that is a lizard is a reptile. One can thus conclude that some reptiles are not animals.",
+    "quasar_full": "s1 (Abstraction): \nLet X = creatures that are lizards, Y = animals, Z = reptiles.\nThe syllogism becomes: Some X are not Y, All Z are X, Some Z are not Y.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∃X ¬Y, ∀Z X, ∃Z ¬Y.\n\ns3 (Explanation): \nThe conclusion \"Some Z are not Y\" logically follows from the premises. If some lizards are not animals and all reptiles are lizards, then some reptiles must be not animals.\n\ns4 (Answering): The answer is: valid.",
+    "quasar_s2": "The formal symbolic structure is: ∃X ¬Y, ∀Z X, ∃Z ¬Y.",
+    "quasar_answer": true
+  },
+  "6c4ccd63-678c-4f1b-a556-516e68e1aae8": {
+    "syllogism": "Anything that is a human being is a mammal. Every single human is a primate. It follows that every primate is a mammal.",
+    "quasar_full": "s1 (Abstraction): \nLet X = human being, Y = mammal, Z = primate.\nThe syllogism can be rewritten as: \n- All X are Y.\n- All X are Z.\n- ∴ All Z are Y.\n\ns2 (Formalisation): \nThe formal symbolic structure is:\n∀x (X(x) → Y(x))\n∀x (X(x) → Z(x))\n∴ ∀x (Z(x) → Y(x))\n\ns3 (Explanation): \nThe conclusion follows logically from the premises because if all X are Y and all X are Z, then it logically follows that all Z are Y.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "The formal symbolic structure is:\n∀x (X(x) → Y(x))\n∀x (X(x) → Z(x))\n∴ ∀x (Z(x) → Y(x))",
+    "quasar_answer": true
+  },
+  "21700c62-87ce-4a56-b92c-0603136a9e23": {
+    "syllogism": "Anything that is a number is never a concept. A subset of integers is composed of numbers. Therefore, some integers are not concepts.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"is a number,\" Y be \"is a concept,\" and Z be \"is an integer.\"\n\ns2 (Formalisation): \nAll X are not Y. Some Z are X.\n\ns3 (Explanation): \nThe conclusion \"some integers are not concepts\" does not logically follow from the premises. The premises state that all numbers are not concepts and a subset of integers is composed of numbers, but it does not imply that some integers are not concepts.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are not Y. Some Z are X.",
+    "quasar_answer": false
+  },
+  "66c02944-2444-4a21-87f3-4c6a4e3f2c7c": {
+    "syllogism": "It is not the case that every single wrench is an object. Anything that is a wrench is a tool. One can thus conclude that some tools are not objects.",
+    "quasar_full": "s1 (Abstraction): \nLet X = wrench, Y = object, Z = tool.\nThe syllogism becomes: \nIt is not the case that every X is a Y. \nEvery X is a Z.\n\ns2 (Formalisation): \n∼ ∀X Y (X is a Y)\n∀X Z (X is a Z)\n\ns3 (Explanation): \nThe conclusion \"some Z are not Y\" does not logically follow from the premises. The first premise only states that not all wrenches are objects, but it does not provide information about other tools.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "∼ ∀X Y (X is a Y)\n∀X Z (X is a Z)",
+    "quasar_answer": false
+  },
+  "b2b10e70-a6c2-4039-b33c-f83c63f23406": {
+    "syllogism": "There are no cars that are liquids. There are no cars that are clouds. Consequently, some clouds are liquids.",
+    "quasar_full": "s1 (Abstraction): \nLet X = cars, Y = liquids, Z = clouds.\n\ns2 (Formalisation): \nAll X are not Y. All X are not Z.\n\ns3 (Explanation): \nThe conclusion \"some clouds are liquids\" does not follow logically from the premises. The premises only state that cars are not liquids and cars are not clouds, but they do not provide any information about the relationship between clouds and liquids.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "All X are not Y. All X are not Z.",
+    "quasar_answer": false
+  },
+  "70125ddb-b5a8-403a-8f61-b7784b695242": {
+    "syllogism": "There are no spiders that are mammals. No insects are considered spiders. There are some insects that are not mammals.",
+    "quasar_full": "s1 (Abstraction): \nLet X = spiders, Y = mammals, Z = insects.\n\ns2 (Formalisation): \n1. All X are not Y.\n2. All Z are not X.\n3. Some Z are not Y.\n\ns3 (Explanation): \nThe conclusion \"There are some insects that are not mammals\" logically follows from the premises, as the premises establish that spiders (a subset of insects) are not mammals, and insects are not spiders, so some insects must be not mammals.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "1. All X are not Y.\n2. All Z are not X.\n3. Some Z are not Y.",
+    "quasar_answer": true
+  },
+  "15428912-887a-473e-927d-b96da3ccb727": {
+    "syllogism": "Tables and sofas do not overlap. A portion of sofas are furniture. Some furniture are not tables.",
+    "quasar_full": "s1 (Abstraction): \nLet X = tables, Y = sofas, Z = furniture.\n\ns2 (Formalisation): \nAll X are not Y. \nSome Y are Z. \nSome Z are not X.\n\ns3 (Explanation): \nThe conclusion does not follow logically from the premises. The premises only establish that some furniture are not tables, but they do not provide any information about the relationship between sofas and tables.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "All X are not Y. \nSome Y are Z. \nSome Z are not X.",
+    "quasar_answer": false
+  },
+  "d3f30118-1d76-44fe-b781-0f5ca59c1064": {
+    "syllogism": "There is no dog that is a cat. Among the dogs that exist, a certain amount are poodles. It must be true that some poodles are not cats.",
+    "quasar_full": "s1 (Abstraction): \nLet X = dog, Y = cat, Z = poodle.\n\ns2 (Formalisation): \nAll X are not Y. Some X are Z.\n\ns3 (Explanation): \nThe conclusion \"some Z are not Y\" logically follows from the premises. The first premise states that all dogs are not cats, and the second premise states that some dogs are poodles. Therefore, it must be true that some poodles are not cats.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "All X are not Y. Some X are Z.",
+    "quasar_answer": true
+  },
+  "484e2490-f1d1-48b9-b44f-39eb8540275e": {
+    "syllogism": "Absolutely no dog is an amphibian. There is no cat that is an amphibian. The only conclusion is that no cat is a dog.",
+    "quasar_full": "s1 (Abstraction): \nLet X = dog, Y = amphibian, Z = cat.\n\ns2 (Formalisation): \n1. All X are not Y.\n2. All Z are not Y.\n∴ All Z are not X.\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that dogs and cats are not amphibians, but this does not imply that cats are not dogs.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "1. All X are not Y.\n2. All Z are not Y.\n∴ All Z are not X.",
+    "quasar_answer": false
+  },
+  "d3cc620e-2438-4c98-a79e-96f1ad1c849a": {
+    "syllogism": "There are no cats which are dogs. Not a single fish is a dog. From this, we can say that all fish are cats.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"cats,\" Y be \"dogs,\" and Z be \"fish.\"\n\ns2 (Formalisation): \nThe given syllogism is: \n1. All X (cats) are not Y (dogs).\n2. No Z (fish) is Y (dogs).\nConclusion: All Z (fish) are X (cats).\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises only establish a relationship between cats and dogs, and fish and dogs, but do not provide any information about the relationship between fish and cats.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The given syllogism is: \n1. All X (cats) are not Y (dogs).\n2. No Z (fish) is Y (dogs).\nConclusion: All Z (fish) are X (cats).",
+    "quasar_answer": false
+  },
+  "42e7f0af-0813-4ec4-a3e3-9a07da8cd76c": {
+    "syllogism": "Anything that is a car is also a mode of transportation. Some cars, which are vehicles, can be found. This implies that a portion of vehicles are modes of transportation.",
+    "quasar_full": "s1 (Abstraction): \nLet X = car, Y = mode of transportation, Z = vehicle.\nThe syllogism can be rewritten as: \n- All X are Y.\n- Some Z are X.\n- ∴ Some Z are Y.\n\ns2 (Formalisation): \nThe formal symbolic structure is:\n∀X (X → Y) ∧ ∃Z (Z ∧ X) → ∃Z (Z ∧ Y)\n\ns3 (Explanation): \nThe conclusion \"Some Z are Y\" logically follows from the premises. If all X are Y and some Z are X, then it is reasonable to conclude that some Z are Y.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "The formal symbolic structure is:\n∀X (X → Y) ∧ ∃Z (Z ∧ X) → ∃Z (Z ∧ Y)",
+    "quasar_answer": true
+  },
+  "94062d61-4540-49d2-b040-2af4bc860cbc": {
+    "syllogism": "It is not true that any warm-blooded animals are reptiles. Some warm-blooded animals are dogs. Consequently, dogs are not reptiles.",
+    "quasar_full": "s1 (Abstraction): \nLet X = warm-blooded animals, Y = reptiles, Z = dogs.\n\ns2 (Formalisation): \nAll X are not Y. Some X are Z. ∴ Z are not Y.\n\ns3 (Explanation): \nThe conclusion follows logically from the premises. If all warm-blooded animals are not reptiles, and some warm-blooded animals are dogs, then it logically follows that dogs are not reptiles.\n\ns4 (Answering): \nThe answer is: valid.",
+    "quasar_s2": "All X are not Y. Some X are Z. ∴ Z are not Y.",
+    "quasar_answer": true
+  },
+  "e0f6b16e-3979-40d8-82ff-01b00edc2e18": {
+    "syllogism": "It is the case that no square has four equal sides. All perfect squares are things that are squares. The conclusion that some perfect squares do not have four equal sides is necessarily true.",
+    "quasar_full": "s1 (Abstraction): \nLet X = square, Y = thing with four equal sides, Z = perfect square.\nNo X is Y, All Z are X.\n\ns2 (Formalisation): \nAll Z are X, No X is Y.\n\ns3 (Explanation): \nThe premises state that no square has four equal sides and all perfect squares are squares. However, this does not logically imply that some perfect squares do not have four equal sides, as the premises only state that no square has four equal sides, not that some perfect squares do not.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "All Z are X, No X is Y.",
+    "quasar_answer": false
+  },
+  "fb437353-9988-4fbb-bf9e-c550ae6e60ff": {
+    "syllogism": "There are no trees that are mammals. There are no trees that are shrubs. Consequently, no shrubs are mammals.",
+    "quasar_full": "s1 (Abstraction): \nLet X = trees, Y = mammals, Z = shrubs.\n\ns2 (Formalisation): \nAll X are not Y. All X are not Z. ∴ No Z are Y.\n\ns3 (Explanation): \nThe conclusion follows logically from the premises. If all trees are not mammals and all trees are not shrubs, it logically follows that no shrubs are mammals.\n\ns4 (Answering): The answer is: valid",
+    "quasar_s2": "All X are not Y. All X are not Z. ∴ No Z are Y.",
+    "quasar_answer": true
+  },
+  "af28a974-3e5d-408e-9549-9ed33acf89b8": {
+    "syllogism": "It is not true that every dog is a poodle. Every creature that is a dog is a canine. Thus, it follows that some canines are not poodles.",
+    "quasar_full": "s1 (Abstraction): \n- X: dog\n- Y: poodle\n- Z: canine\n\ns2 (Formalisation): \nAll X are Y is false (¬∀X Y)\nAll Z are X (∀Z X)\n\ns3 (Explanation): \nThe conclusion \"some canines are not poodles\" is equivalent to \"there exists a Z such that Z is a canine and Z is not a Y\". However, the premises do not provide any information about the existence of canines that are not dogs. The premises only state that not all dogs are poodles and all dogs are canines.\n\ns4 (Answering): invalid",
+    "quasar_s2": "All X are Y is false (¬∀X Y)\nAll Z are X (∀Z X)",
+    "quasar_answer": false
+  },
+  "5cca940a-e5b3-42a1-83ab-186baba11f7f": {
+    "syllogism": "Any creature that is a cow is a mammal. There are no living things that are mammals. Consequently, no living thing is a cow.",
+    "quasar_full": "s1 (Abstraction): \nLet X = creature that is a cow, Y = mammal, Z = living thing.\nX = Y, Z ≠ Y.\n\ns2 (Formalisation): \nAll X are Y. No Z are Y. ∴ No Z are X.\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The first premise states that all cows are mammals, but the second premise states that there are no living things that are mammals. This does not necessarily mean that there are no living things that are cows.\n\ns4 (Answering): \nThe answer is: invalid.",
+    "quasar_s2": "All X are Y. No Z are Y. ∴ No Z are X.",
+    "quasar_answer": false
+  },
+  "ca559434-ddc8-4cfa-928a-bc847d731571": {
+    "syllogism": "There exist no things which are furniture that are not chairs. It is also true that no tables are furniture. From these two statements, it can be concluded that some tables are chairs.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"things\", Y be \"furniture\", Z be \"chairs\".\n\ns2 (Formalisation): \nAll X are Y (All things are furniture), \nAll Z are Y (All chairs are furniture), \n∴ Some Z are X (Some chairs are things).\n\ns3 (Explanation): \nThe conclusion \"Some Z are X\" does not logically follow from the premises. The premises state that all things are furniture and all chairs are furniture, but they do not provide any information about the relationship between chairs and tables.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are Y (All things are furniture), \nAll Z are Y (All chairs are furniture), \n∴ Some Z are X (Some chairs are things).",
+    "quasar_answer": false
+  },
+  "e4178301-df8f-47f7-bc8b-130e68904862": {
+    "syllogism": "Anything that is a chair is a piece of furniture. Every single object that is an office chair is a chair. It can be concluded that every office chair is furniture.",
+    "quasar_full": "s1 (Abstraction): \nLet X = chair, Y = piece of furniture, Z = office chair.\n\ns2 (Formalisation): \nAll X are Y. All Z are X. ∴ All Z are Y.\n\ns3 (Explanation): \nThe conclusion logically follows from the premises. If all office chairs are chairs and all chairs are pieces of furniture, then it logically follows that all office chairs are pieces of furniture.\n\ns4 (Answering): \nvalid",
+    "quasar_s2": "All X are Y. All Z are X. ∴ All Z are Y.",
+    "quasar_answer": true
+  },
+  "edf902f6-48d1-4564-bc03-996b98dcbfdd": {
+    "syllogism": "Every substance that is water vapor is composed of granite. There are some clouds that are composed of water vapor. Consequently, some clouds are composed of granite.",
+    "quasar_full": "s1 (Abstraction): \nLet X = substance that is water vapor, Y = composed of granite, Z = clouds.\nThe syllogism can be rewritten as: Every X is Y, Some Z are X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∀X (X → Y) ∃Z (Z ∧ X)\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that every water vapor is composed of granite, but there is no information about the composition of clouds. The conclusion assumes that clouds are composed of water vapor, which is not given.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: ∀X (X → Y) ∃Z (Z ∧ X)",
+    "quasar_answer": false
+  },
+  "92427535-4c9f-485a-a2dd-1f116abc9fa6": {
+    "syllogism": "Every single priest is a man. All priests are human. It follows from this that some humans are not men.",
+    "quasar_full": "s1 (Abstraction): \n- X: priests\n- Y: men\n- Z: humans\n\ns2 (Formalisation): \nAll X are Y. All X are Z. ∴ Some Z are not Y.\n\ns3 (Explanation): \nThe conclusion \"Some Z are not Y\" contradicts the given premises, which state that all X (priests) are Y (men) and all X are Z (humans). This is a contradiction, as it cannot be true that some humans are not men.\n\ns4 (Answering): \nThe syllogism is invalid.",
+    "quasar_s2": "All X are Y. All X are Z. ∴ Some Z are not Y.",
+    "quasar_answer": false
+  },
+  "79d780f7-0f45-4abb-b74e-2f83c9e1c6cd": {
+    "syllogism": "Anything which is an object can sing opera. It is the case that some lamps cannot sing opera. This logically leads to the conclusion that some lamps are not objects.",
+    "quasar_full": "s1 (Abstraction): \nLet X = object, Y = can sing opera, Z = lamp\nThe syllogism becomes: All X are Y, Some Z are not Y.\n\ns2 (Formalisation): \nAll X are Y, Some Z are not Y, ∴ Some Z are not X.\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that some lamps cannot sing opera, but it does not imply that lamps are not objects.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are Y, Some Z are not Y, ∴ Some Z are not X.",
+    "quasar_answer": false
+  },
+  "9e69e5b8-bee5-41ad-bbe0-3bfea26b0819": {
+    "syllogism": "It is true that no dogs are cats. No pets are dogs. It follows that no pets are cats.",
+    "quasar_full": "s1 (Abstraction): \nLet X = cats, Y = dogs, Z = pets.\nThe syllogism becomes: No X are Y, No Y are Z, It follows that No X are Z.\n\ns2 (Formalisation): \nThe formal symbolic structure is: \n∼∀X Y ∧ ∀Y Z → ∀X Z\n\ns3 (Explanation): \nThe conclusion follows logically from the premises because if there are no dogs (Y) and no dogs are pets (Z), then it logically follows that there are no cats (X) that are pets (Z), since cats and dogs are mutually exclusive.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "The formal symbolic structure is: \n∼∀X Y ∧ ∀Y Z → ∀X Z",
+    "quasar_answer": true
+  },
+  "d71881bb-97b0-4154-85b8-bb49a95fedc2": {
+    "syllogism": "Any article of clothing that is a pair of trousers is also a garment. Some shoes, it is known, are not garments. This necessarily implies that some shoes are not trousers.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"article of clothing that is a pair of trousers\", \nY be \"garment\", \nZ be \"shoes\".\n\ns2 (Formalisation): \nPremise 1: All X are Y (All articles of clothing that are a pair of trousers are garments)\nPremise 2: Some Z are not Y (Some shoes are not garments)\nConclusion: Some Z are not X (Some shoes are not trousers)\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises only establish a relationship between trousers and garments, but do not provide any information about the relationship between shoes and trousers.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "Premise 1: All X are Y (All articles of clothing that are a pair of trousers are garments)\nPremise 2: Some Z are not Y (Some shoes are not garments)\nConclusion: Some Z are not X (Some shoes are not trousers)",
+    "quasar_answer": false
+  },
+  "14a48322-c73a-4e79-a8ab-04a9b4d559f9": {
+    "syllogism": "A portion of things that are shapes are also quadrilaterals. Among the things that are squares, some are shapes. From this, we can state that not all squares are quadrilaterals.",
+    "quasar_full": "s1 (Abstraction): \nLet X = shapes, Y = quadrilaterals, Z = squares.\n\ns2 (Formalisation): \nPremise 1: Some X are Y (Some shapes are quadrilaterals).\nPremise 2: Some Z are X (Some squares are shapes).\nConclusion: Not all Z are Y (Not all squares are quadrilaterals).\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that some shapes are quadrilaterals and some squares are shapes, but they do not provide information about all squares being quadrilaterals.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "Premise 1: Some X are Y (Some shapes are quadrilaterals).\nPremise 2: Some Z are X (Some squares are shapes).\nConclusion: Not all Z are Y (Not all squares are quadrilaterals).",
+    "quasar_answer": false
+  },
+  "0a8e104e-5fd5-41e3-b410-e8bcc38b642b": {
+    "syllogism": "Every single butterfly is not an ant. There are some insects that are ants. It follows that some of the insects are not butterflies.",
+    "quasar_full": "s1 (Abstraction): \nLet X = butterfly, Y = ant, Z = insect.\nThe syllogism becomes: Every X is not Y. There are some Z that are Y. It follows that some Z are not X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∀x (x is not Y) ∧ ∃y (y is Y ∧ y is Z) ⊢ ∃z (z is Z ∧ z is not X)\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises only state that some insects are ants, but they do not provide any information about the relationship between butterflies and ants.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: ∀x (x is not Y) ∧ ∃y (y is Y ∧ y is Z) ⊢ ∃z (z is Z ∧ z is not X)",
+    "quasar_answer": false
+  },
+  "471b958f-12c1-473b-b660-e7bf6a7bc8a5": {
+    "syllogism": "There is no chair that is a table. Some tables are pieces of furniture. This implies that some pieces of furniture are not chairs.",
+    "quasar_full": "s1 (Abstraction): \nLet X = chair, Y = table, Z = piece of furniture.\nThe syllogism can be rewritten as: There is no X that is a Y. Some Y are Z. This implies that some Z are not X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: \n1. ∀x (¬(X(x) ∧ Y(x)))\n2. ∃y (Y(y) ∧ Z(y))\n3. ∴ ∃z (Z(z) ∧ ¬X(z))\n\ns3 (Explanation): \nThe conclusion follows logically from the premises. If there is no chair that is a table, and some tables are pieces of furniture, then it logically follows that some pieces of furniture are not chairs.\n\ns4 (Answering): The answer is: valid",
+    "quasar_s2": "The formal symbolic structure is: \n1. ∀x (¬(X(x) ∧ Y(x)))\n2. ∃y (Y(y) ∧ Z(y))\n3. ∴ ∃z (Z(z) ∧ ¬X(z))",
+    "quasar_answer": true
+  },
+  "23987e66-ca96-4ac7-adc0-74233f4b872d": {
+    "syllogism": "Celestial bodies that have enough gravity to be nearly round are in no way asteroids. Everything that can be classified as a planet is a celestial body with enough gravity to be nearly round. Planets are distinct from asteroids.",
+    "quasar_full": "s1 (Abstraction): \n- X: celestial bodies that have enough gravity to be nearly round\n- Y: asteroids\n- Z: planets\n\ns2 (Formalisation): \nAll X are not Y. All Z are X. Therefore, All Z are not Y.\n\ns3 (Explanation): \nThe conclusion logically follows from the premises. If all planets (Z) are celestial bodies with enough gravity to be nearly round (X), and all celestial bodies with enough gravity to be nearly round are not asteroids (Y), then it logically follows that all planets are not asteroids.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "All X are not Y. All Z are X. Therefore, All Z are not Y.",
+    "quasar_answer": true
+  },
+  "0fb75c34-6bea-4cf3-a1bc-4f1076a5c521": {
+    "syllogism": "There are no birds that are mammals. There are no mammals that are fish. Therefore, some fish are birds.",
+    "quasar_full": "s1 (Abstraction): \nLet X = birds, Y = mammals, Z = fish.\nThe syllogism becomes: There are no X that are Y. There are no Y that are Z. Therefore, some Z are X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ¬∀X Y ∧ ¬∀Y Z ⊢ ∃Z X\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that there are no birds that are mammals and no mammals that are fish, but this does not imply that there are fish that are birds.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: ¬∀X Y ∧ ¬∀Y Z ⊢ ∃Z X",
+    "quasar_answer": false
+  },
+  "d6c103ed-48b9-476f-928b-372930ff2547": {
+    "syllogism": "Everything that is a bicycle is a vehicle with pedals. The set of skateboards contains no vehicles with pedals. There exist skateboards which are not bicycles.",
+    "quasar_full": "s1 (Abstraction): \nLet X = bicycle, Y = vehicle with pedals, Z = skateboard.\n\ns2 (Formalisation): \nAll X are Y. \nNo Z are Y. \nThere exist Z which are not X.\n\ns3 (Explanation): \nThe conclusion follows logically from the premises. If all bicycles are vehicles with pedals and there are no skateboards that are vehicles with pedals, then it logically follows that there are skateboards that are not bicycles.\n\ns4 (Answering): \nvalid",
+    "quasar_s2": "All X are Y. \nNo Z are Y. \nThere exist Z which are not X.",
+    "quasar_answer": true
+  },
+  "2695b34b-ab4c-40e7-8e5f-4d3ec868e323": {
+    "syllogism": "Not one of the chairs is a table. All recliners are things that are chairs. It follows that some recliners are not tables.",
+    "quasar_full": "s1 (Abstraction): \nLet X = recliners, Y = chairs, Z = tables.\n\ns2 (Formalisation): \nAll X are Y (All recliners are chairs).\nNot some Z are Y (Not some tables are chairs).\nIt follows that not some X are Z (It follows that some recliners are not tables).\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The first premise states that all recliners are chairs, but it does not provide information about tables. The second premise is also about chairs, not recliners.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are Y (All recliners are chairs).\nNot some Z are Y (Not some tables are chairs).\nIt follows that not some X are Z (It follows that some recliners are not tables).",
+    "quasar_answer": false
+  },
+  "615403d0-4ba9-4739-9cee-f39e1be73ad6": {
+    "syllogism": "Any bird has wings. Every single insect has wings. This means that all insects are birds.",
+    "quasar_full": "s1 (Abstraction): \nLet X = bird, Y = insect, Z = wings.\nThe syllogism becomes: Any X has Y. Every single Y has Z. This means that all Y are X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∀X (X → Y) ∧ ∀Y (Y → Z) ∴ ∀Y (Y → X)\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that all birds have wings and all insects have wings, but it does not imply that all insects are birds.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: ∀X (X → Y) ∧ ∀Y (Y → Z) ∴ ∀Y (Y → X)",
+    "quasar_answer": false
+  },
+  "730749f1-0990-4b95-94a7-ae252ec0209e": {
+    "syllogism": "Any and all squirrels have fur. There are some squirrels that are also trees. This implies that a certain number of trees are creatures with fur.",
+    "quasar_full": "s1 (Abstraction): \nLet X = squirrels, Y = fur, Z = trees.\n\ns2 (Formalisation): \nAll X are Y. Some X are Z.\n\ns3 (Explanation): \nThe conclusion \"a certain number of trees are creatures with fur\" does not logically follow from the premises. The premises only state that some squirrels are also trees, but it does not imply that trees have fur.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are Y. Some X are Z.",
+    "quasar_answer": false
+  },
+  "3550ed18-92b8-4bbe-bc64-12ce120e3eac": {
+    "syllogism": "There is no dialect that is an official language. Some official languages are spoken systems. Therefore, some spoken systems are not dialects.",
+    "quasar_full": "s1 (Abstraction): \nLet X = dialect, Y = official language, Z = spoken system.\nThe syllogism becomes: There is no X that is a Y. Some Y are Z. Therefore, some Z are not X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: \n∼∃X(Y(X)) ∧ ∃YZ(Y(Z)) ⊢ ∃Z(¬X(Z))\n\ns3 (Explanation): \nThe conclusion \"some Z are not X\" does not logically follow from the premises. The premises state that there is no X that is a Y and some Y are Z, but they do not provide information about the existence of Z that are not X.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: \n∼∃X(Y(X)) ∧ ∃YZ(Y(Z)) ⊢ ∃Z(¬X(Z))",
+    "quasar_answer": false
+  },
+  "b12fc6db-bfb1-40f9-8f77-453c9fb5a0e4": {
+    "syllogism": "There are some insects which are chickens. All chickens are, by definition, birds. Therefore, some birds are insects.",
+    "quasar_full": "s1 (Abstraction): \nLet X = insects, Y = chickens, Z = birds.\nThe syllogism becomes: There are some X which are Y. All Y are Z.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∃X(Y(X) ∧ ∀Y(Z(Y)))\n\ns3 (Explanation): \nThe conclusion \"some birds are insects\" does not logically follow from the premises. The premises only state that some insects are chickens and all chickens are birds, but it does not imply that some birds are insects.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: ∃X(Y(X) ∧ ∀Y(Z(Y)))",
+    "quasar_answer": false
+  },
+  "91d5d4bc-2295-494c-ac9f-74319ac189fc": {
+    "syllogism": "Anything that is a phone is a bird. All birds are things that are made of liquid light. From these facts, it is clear that a few things made of liquid light are phones.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"a phone\", Y be \"a bird\", Z be \"made of liquid light\".\n\ns2 (Formalisation): \nAll X (phones) are Y (birds).\nAll Y (birds) are Z (made of liquid light).\n∴ Some Z (made of liquid light) are X (phones).\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that all phones are birds and all birds are made of liquid light, but it does not imply that a few things made of liquid light are phones. The conclusion should be \"All Z (made of liquid light) are X (phones)\" or \"Some Z (made of liquid light) are X (phones)\".\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X (phones) are Y (birds).\nAll Y (birds) are Z (made of liquid light).\n∴ Some Z (made of liquid light) are X (phones).",
+    "quasar_answer": false
+  },
+  "a980265f-e07a-4e65-a7dd-76a8751338f6": {
+    "syllogism": "There is no plant that is a shrub which is an animal. There are no trees that are shrubs. Therefore, no tree is an animal.",
+    "quasar_full": "s1 (Abstraction): \nLet X = plant, Y = shrub, Z = animal.\n\ns2 (Formalisation): \nAll X are not (Y and Z).\nAll Y are not Z.\n\ns3 (Explanation): \nThe conclusion \"no tree is an animal\" is not directly supported by the premises. The premises only talk about shrubs, not trees. The conclusion does not logically follow from the premises.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are not (Y and Z).\nAll Y are not Z.",
+    "quasar_answer": false
+  },
+  "27f552a5-891c-4694-b2aa-f7c345d3ae30": {
+    "syllogism": "It is not true that any feather is made of paper. There is not a single book that is a feather. Therefore, no book is made of paper.",
+    "quasar_full": "s1 (Abstraction): \nLet X = book, Y = feather, Z = made of paper.\nThe syllogism becomes: It is not true that any Y is Z. There is not a single X that is Y. Therefore, no X is Z.\n\ns2 (Formalisation): \nThe formal symbolic structure is:\n1. ¬∀Y Z (It is not true that any Y is Z)\n2. ¬∃X Y (There is not a single X that is Y)\n∴ ∀X ¬Z (Therefore, no X is Z)\n\ns3 (Explanation): \nThe conclusion follows logically from the premises. If there are no books that are feathers, and no feathers are made of paper, then it logically follows that no books are made of paper.\n\ns4 (Answering): The answer is: valid",
+    "quasar_s2": "The formal symbolic structure is:\n1. ¬∀Y Z (It is not true that any Y is Z)\n2. ¬∃X Y (There is not a single X that is Y)\n∴ ∀X ¬Z (Therefore, no X is Z)",
+    "quasar_answer": true
+  },
+  "23efcdf6-e40f-4da6-b834-09b576683e2c": {
+    "syllogism": "Anything that is a profession is a job that requires skill. Practicing medicine as a doctor is a profession. Consequently, all doctors are required to have skill.",
+    "quasar_full": "s1 (Abstraction): \nLet X = \"a profession\", Y = \"a job that requires skill\", Z = \"practicing medicine as a doctor\".\n\ns2 (Formalisation): \nAll X are Y. (All professions are jobs that require skill.)\nAll Z are X. (Practicing medicine as a doctor is a profession.)\n∴ All Z are Y. (Consequently, all doctors are required to have skill.)\n\ns3 (Explanation): \nThe conclusion logically follows from the premises. If all professions require skill and practicing medicine as a doctor is a profession, then it logically follows that practicing medicine as a doctor requires skill.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "All X are Y. (All professions are jobs that require skill.)\nAll Z are X. (Practicing medicine as a doctor is a profession.)\n∴ All Z are Y. (Consequently, all doctors are required to have skill.)",
+    "quasar_answer": true
+  },
+  "5f2028b1-f449-4a1f-860a-73b5922d94c1": {
+    "syllogism": "It is true that every bachelor is a married man. No married men are single men. This leads to the conclusion that some single men are not bachelors.",
+    "quasar_full": "s1 (Abstraction): \nLet X = bachelor, Y = married man, Z = single man.\nThe syllogism can be rewritten as: Every X is Y, No Y is Z.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∀X Y, ∀Y ¬Z.\n\ns3 (Explanation): \nThe conclusion \"some single men are not bachelors\" is equivalent to \"there exists a Z such that ¬X Z\". However, the premises only state that every X is Y and no Y is Z, but they do not provide any information about the existence of Z. Therefore, the conclusion does not logically follow from the premises.\n\ns4 (Answering): The answer is: invalid.",
+    "quasar_s2": "The formal symbolic structure is: ∀X Y, ∀Y ¬Z.",
+    "quasar_answer": false
+  },
+  "fba9dd9e-2617-4b21-8a4c-ebd682d2419d": {
+    "syllogism": "Every single poodle is a dog. All poodles are animals. A subset of animals are not dogs.",
+    "quasar_full": "s1 (Abstraction): \nLet X = poodle, Y = dog, Z = animal.\nThe syllogism becomes: Every single X is Y. All X are Z. A subset of Z are not Y.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∀x (X(x) → Y(x)), ∀x (X(x) → Z(x)), ∃z (Z(z) ∧ ¬Y(z))\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The first two premises establish a relationship between X and Y, and between X and Z. However, the third premise introduces a subset of Z that are not Y, which does not necessarily affect the relationship between X and Y.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: ∀x (X(x) → Y(x)), ∀x (X(x) → Z(x)), ∃z (Z(z) ∧ ¬Y(z))",
+    "quasar_answer": false
+  },
+  "d7828ad4-acbb-4ae9-ae3a-deafd6ca1c7e": {
+    "syllogism": "There is no bird that is an insect. There are some wasps that are insects. It can be deduced that there are no wasps that are birds.",
+    "quasar_full": "s1 (Abstraction): \nLet X = bird, Y = insect, Z = wasp.\n\ns2 (Formalisation): \nAll X are not Y. Some Z are Y.\n\ns3 (Explanation): \nThe conclusion \"There are no Z that are X\" does not logically follow from the premises. The premises only state that there are no birds that are insects and some wasps are insects, but they do not provide information about wasps being birds.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are not Y. Some Z are Y.",
+    "quasar_answer": false
+  },
+  "24c72068-73c7-4ede-bc41-03f2229ddbcf": {
+    "syllogism": "There is not a single person who is a human and also a non-living thing. It is a fact that some musicians are non-living things. The only logical conclusion is that some musicians are not humans.",
+    "quasar_full": "s1 (Abstraction): \nLet X = human, Y = non-living thing, Z = musician.\nThe syllogism can be rewritten as: There is not a single X who is also a Y. Some Z are Y. Some Z are not X.\n\ns2 (Formalisation): \n∀x (¬(x is X ∧ x is Y)) ∧ ∃z (z is Z ∧ z is Y) → ∃z (z is Z ∧ ¬z is X)\n\ns3 (Explanation): \nThe conclusion \"Some Z are not X\" logically follows from the premises. If there is no X that is also a Y, and some Z are Y, then it is reasonable to conclude that some Z are not X.\n\ns4 (Answering): The answer is: valid",
+    "quasar_s2": "∀x (¬(x is X ∧ x is Y)) ∧ ∃z (z is Z ∧ z is Y) → ∃z (z is Z ∧ ¬z is X)",
+    "quasar_answer": true
+  },
+  "a676f828-73d3-48f6-be30-2623625da25e": {
+    "syllogism": "There are no birds that are fish. It is also true that no fish are mammals. One might conclude that no mammals are birds.",
+    "quasar_full": "s1 (Abstraction): \nLet's use the following predicates:\n- X: birds\n- Y: fish\n- Z: mammals\n\ns2 (Formalisation): \nThe given syllogism can be formalized as:\n1. ∀x (Bird(x) → ¬Fish(x))\n2. ∀x (Fish(x) → ¬Mammal(x))\n∴ ∀x (Mammal(x) → ¬Bird(x))\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that birds are not fish and fish are not mammals, but this does not imply that mammals are not birds.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "The given syllogism can be formalized as:\n1. ∀x (Bird(x) → ¬Fish(x))\n2. ∀x (Fish(x) → ¬Mammal(x))\n∴ ∀x (Mammal(x) → ¬Bird(x))",
+    "quasar_answer": false
+  },
+  "30cc1fd2-d0b2-4679-8a40-c737de2c6a8d": {
+    "syllogism": "There is no circle that is a triangle. No triangle is a square whatsoever. Therefore, no square is a circle.",
+    "quasar_full": "s1 (Abstraction): \nLet X = circle, Y = triangle, Z = square.\nThe syllogism becomes: There is no X that is a Y. No Y is a Z. Therefore, no Z is an X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: \n∼∃X(YX) ∧ ∼∀YZ → ∼∃ZX\n\ns3 (Explanation): \nThe conclusion follows logically from the premises. If there are no X that are Y, and no Y that are Z, then it logically follows that there are no Z that are X.\n\ns4 (Answering): The answer is: valid",
+    "quasar_s2": "The formal symbolic structure is: \n∼∃X(YX) ∧ ∼∀YZ → ∼∃ZX",
+    "quasar_answer": true
+  },
+  "1427a63e-c71d-473c-82f0-ef2d7980d2a1": {
+    "syllogism": "Any politician is a reptile. There exist some politicians who are prime ministers. It must follow that a portion of prime ministers are reptiles.",
+    "quasar_full": "s1 (Abstraction): \nLet X = politician, Y = reptile, Z = prime minister.\nThe syllogism becomes: Any X is Y, Some X are Z.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∀X (X → Y) ∃X (X ∧ Z)\n\ns3 (Explanation): \nThe conclusion \"a portion of prime ministers are reptiles\" does not logically follow from the premises. The premises only state that all politicians are reptiles and there exist some politicians who are prime ministers, but it does not provide any information about the proportion of prime ministers that are reptiles.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: ∀X (X → Y) ∃X (X ∧ Z)",
+    "quasar_answer": false
+  },
+  "82a89276-2076-4a69-95ef-78636b092f3b": {
+    "syllogism": "There are no liquids that are animals. It is also true that no tables are liquids. Therefore, there are no tables which are animals.",
+    "quasar_full": "s1 (Abstraction): \nLet X = tables, Y = liquids, Z = animals.\n\ns2 (Formalisation): \nAll X are not Y (All tables are not liquids).\nAll X are not Z (All tables are not animals).\n\ns3 (Explanation): \nThe conclusion \"there are no tables which are animals\" is logically equivalent to \"all tables are not animals.\" However, the premises only state that tables are not liquids and animals are not liquids. There is no direct connection between tables and animals, so the conclusion does not logically follow.\n\ns4 (Answering): The answer is: invalid.",
+    "quasar_s2": "All X are not Y (All tables are not liquids).\nAll X are not Z (All tables are not animals).",
+    "quasar_answer": false
+  },
+  "11b8ca92-ad55-4294-a3c6-35c4908b497b": {
+    "syllogism": "Every single bovine is an insect. Nothing that is a cow is an insect. It can be said that some cows are not bovine.",
+    "quasar_full": "s1 (Abstraction): \nLet X = bovine, Y = insect, Z = cow.\n\ns2 (Formalisation): \nAll X are Y. (Every single bovine is an insect.)\nNo Z is Y. (Nothing that is a cow is an insect.)\n∴ Some Z are not X. (It can be said that some cows are not bovine.)\n\ns3 (Explanation): \nThe conclusion \"Some Z are not X\" does not logically follow from the premises. The first premise states that all X are Y, but the second premise states that no Z is Y. This does not necessarily imply that some Z are not X.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "All X are Y. (Every single bovine is an insect.)\nNo Z is Y. (Nothing that is a cow is an insect.)\n∴ Some Z are not X. (It can be said that some cows are not bovine.)",
+    "quasar_answer": false
+  },
+  "26f1c895-ceba-49a2-b0d1-6fa858d98e56": {
+    "syllogism": "Among the people that are artists, some are scientists. Every single person who is an artist is a musician. It must be the case that not a single musician is an artist.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"people that are artists,\" Y be \"scientists,\" and Z be \"musicians.\"\n\ns2 (Formalisation): \n1. Some X are Y (Some artists are scientists).\n2. All X are Z (Every single person who is an artist is a musician).\n3. Not all Z are X (It must be the case that not a single musician is an artist).\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that some artists are scientists and every artist is a musician, but this does not imply that no musician is an artist.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "1. Some X are Y (Some artists are scientists).\n2. All X are Z (Every single person who is an artist is a musician).\n3. Not all Z are X (It must be the case that not a single musician is an artist).",
+    "quasar_answer": false
+  },
+  "f6ee2223-9624-4392-8189-4226b361e519": {
+    "syllogism": "Every single cup can be described as a container. There are no containers that are feelings. It is therefore a sound deduction that some feelings are not cups.",
+    "quasar_full": "s1 (Abstraction): \nLet X = cup, Y = container, Z = feeling.\n\ns2 (Formalisation): \nAll X are Y (Every single cup can be described as a container).\nNo Z are Y (There are no containers that are feelings).\n∴ Some Z are not X (It is therefore a sound deduction that some feelings are not cups).\n\ns3 (Explanation): \nThe conclusion \"Some Z are not X\" does not logically follow from the premises. The premises only state that all cups are containers and there are no containers that are feelings, but they do not provide any information about feelings that are not cups.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "All X are Y (Every single cup can be described as a container).\nNo Z are Y (There are no containers that are feelings).\n∴ Some Z are not X (It is therefore a sound deduction that some feelings are not cups).",
+    "quasar_answer": false
+  },
+  "79a5bc3c-3b34-4c2b-9927-04dc47bc93dd": {
+    "syllogism": "Some animals are not carnivores. There are some lions that are animals. Consequently, every lion is a carnivore.",
+    "quasar_full": "s1 (Abstraction): \nLet X = animals, Y = carnivores, Z = lions.\nThe syllogism can be rewritten as: Some X are not Y. Some Z are X. Consequently, every Z is Y.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∃X ¬Y, ∃Z X, ∴ ∀Z Y.\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that some animals are not carnivores and some lions are animals, but this does not imply that every lion is a carnivore.\n\ns4 (Answering): The answer is: invalid.",
+    "quasar_s2": "The formal symbolic structure is: ∃X ¬Y, ∃Z X, ∴ ∀Z Y.",
+    "quasar_answer": false
+  },
+  "dd848d38-a877-49b5-b8fa-1438e88027a6": {
+    "syllogism": "Every single four-sided-shape is a rectangle. All four-sided-shapes are squares. It follows from this that some squares are not rectangles.",
+    "quasar_full": "s1 (Abstraction): \n- X: four-sided-shape\n- Y: rectangle\n- Z: square\n\ns2 (Formalisation): \nAll X are Y (Every single four-sided-shape is a rectangle)\nAll X are Z (All four-sided-shapes are squares)\n∴ Some Z are not Y (It follows from this that some squares are not rectangles)\n\ns3 (Explanation): \nThe first two premises imply that all four-sided-shapes are both rectangles and squares. This contradicts the conclusion that some squares are not rectangles.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are Y (Every single four-sided-shape is a rectangle)\nAll X are Z (All four-sided-shapes are squares)\n∴ Some Z are not Y (It follows from this that some squares are not rectangles)",
+    "quasar_answer": false
+  },
+  "fdeb867c-fd78-448e-9aab-8b528d533532": {
+    "syllogism": "The set of stars and the set of moons are entirely separate. The group of moons and the group of planets are disjoint. Consequently, some planets are not stars.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"stars\", Y be \"moons\", Z be \"planets\".\n\ns2 (Formalisation): \nPremise 1: All X are not Y.\nPremise 2: All Y are not Z.\nConclusion: Some Z are not X.\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that X and Y are disjoint, and Y and Z are disjoint, but this does not imply that Z and X are disjoint.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "Premise 1: All X are not Y.\nPremise 2: All Y are not Z.\nConclusion: Some Z are not X.",
+    "quasar_answer": false
+  },
+  "bce58a1d-b5e7-42c2-9f67-4d4efe313297": {
+    "syllogism": "There is no liquid that is water. There are no solids that are water. It can be deduced that there are no solids that are liquids.",
+    "quasar_full": "s1 (Abstraction): \nLet X = liquid, Y = water, Z = solid.\n\ns2 (Formalisation): \nAll X are not Y. \nAll Y are not Z.\n\ns3 (Explanation): \nThe conclusion \"There are no Z that are X\" does not logically follow from the premises. The premises only state that there are no X that are Y and no Y that are Z, but they do not provide information about the relationship between Z and X.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are not Y. \nAll Y are not Z.",
+    "quasar_answer": false
+  },
+  "af51a83a-c1f0-4f5e-93b0-19a9233e7f68": {
+    "syllogism": "Anything that is an artist is not a person. A subset of those who are artists are also painters. This proves that at least one painter is not a person.",
+    "quasar_full": "s1 (Abstraction): \nLet X = artist, Y = person, Z = painter.\nThe syllogism can be rewritten as: \nAll X are not Y. Some Z are X.\n\ns2 (Formalisation): \n∀x (Artist(x) → ¬Person(x)) ∧ ∃z (Painter(z) ∧ Artist(z))\n\ns3 (Explanation): \nThe conclusion \"at least one painter is not a person\" does not logically follow from the premises. The premises state that all artists are not persons, but it does not provide any information about painters being persons or not.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "∀x (Artist(x) → ¬Person(x)) ∧ ∃z (Painter(z) ∧ Artist(z))",
+    "quasar_answer": false
+  },
+  "11f637a0-e606-41de-b12a-dfe12dfb87f1": {
+    "syllogism": "There are no carnivores which are also herbivores. It is understood that a number of lions are carnivores. Hence, some lions are not herbivores.",
+    "quasar_full": "s1 (Abstraction): \nLet X = carnivores, Y = herbivores, Z = lions.\n\ns2 (Formalisation): \nAll X are not Y. Some Z are X.\n\ns3 (Explanation): \nThe conclusion \"some lions are not herbivores\" does not logically follow from the premises. The first premise states that there are no carnivores that are also herbivores, but it does not provide information about lions being herbivores. The second premise only states that lions are carnivores, which is consistent with the first premise.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are not Y. Some Z are X.",
+    "quasar_answer": false
+  },
+  "bf41199c-cdb9-49c6-a606-6109d5ec16e4": {
+    "syllogism": "A certain number of students are athletes. Among the people that are teenagers, a few are students. This allows us to state that some teenagers are not athletes.",
+    "quasar_full": "s1 (Abstraction): \nLet X = athletes, Y = students, Z = teenagers.\nThe syllogism can be rewritten as: Some X are Y, Some Y are Z, Therefore Some Z are not X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∃X ∃Y (X ∩ Y ≠ ∅) ∧ ∃Y ∃Z (Y ∩ Z ≠ ∅) ∴ ∃Z ∃X (Z ∩ X = ∅)\n\ns3 (Explanation): \nThe conclusion \"Some Z are not X\" does not logically follow from the premises. The premises state that there are some students who are athletes and some teenagers who are students, but this does not imply that there are some teenagers who are not athletes.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: ∃X ∃Y (X ∩ Y ≠ ∅) ∧ ∃Y ∃Z (Y ∩ Z ≠ ∅) ∴ ∃Z ∃X (Z ∩ X = ∅)",
+    "quasar_answer": false
+  },
+  "4c762814-a34e-40ef-86ff-cefb24d6e5d7": {
+    "syllogism": "All chairs are clouds. None of the clouds are furniture. Therefore, no piece of furniture is a chair.",
+    "quasar_full": "s1 (Abstraction): \nLet X = chairs, Y = clouds, Z = furniture.\n\ns2 (Formalisation): \nAll X are Y. \nNone of the Y are Z. \nTherefore, no Z is X.\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that all chairs are clouds and none of the clouds are furniture, but it does not imply that no furniture is a chair.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "All X are Y. \nNone of the Y are Z. \nTherefore, no Z is X.",
+    "quasar_answer": false
+  },
+  "79a6a4f1-95fe-4385-99f2-d87a029d6e53": {
+    "syllogism": "Not a single politician is a child. It is also true that no actor is a politician. It follows that no actor is a child.",
+    "quasar_full": "s1 (Abstraction): \nLet X = child, Y = politician, Z = actor.\n\ns2 (Formalisation): \nAll X are not Y. \nAll Y are not Z.\n\ns3 (Explanation): \nThe conclusion \"no actor is a child\" is not logically implied by the premises. The premises only state that politicians are not children and actors are not politicians, but there is no connection between actors and children.\n\ns4 (Answering): invalid",
+    "quasar_s2": "All X are not Y. \nAll Y are not Z.",
+    "quasar_answer": false
+  },
+  "c78c557c-4809-47a0-8286-ee3b176365be": {
+    "syllogism": "There exist no insects that are also humans. At least one student is a human. At least one student is an insect.",
+    "quasar_full": "s1 (Abstraction): \nLet X = insect, Y = human, Z = student\nThe syllogism becomes: There exist no X that are also Y. At least one Z is Y. At least one Z is X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: \n1. ∀x (¬(x is Y))\n2. ∃z (z is Y)\n3. ∃z (z is X)\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. Premise 1 states that no X are Y, but premise 2 states that at least one Z is Y, which contradicts premise 1. The conclusion that at least one Z is X is not supported by the premises.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: \n1. ∀x (¬(x is Y))\n2. ∃z (z is Y)\n3. ∃z (z is X)",
+    "quasar_answer": false
+  },
+  "6a3912d2-fbfe-4fbc-877f-ca956282dfca": {
+    "syllogism": "Anything that is a fish is not a mammal. There are no whales that are fish. Consequently, every whale is a reptile.",
+    "quasar_full": "s1 (Abstraction): \nLet X = fish, Y = mammal, Z = reptile.\n\ns2 (Formalisation): \nAll X are not Y. \nThere are no Z that are X. \n∴ Every Z is Y.\n\ns3 (Explanation): \nThe conclusion does not follow logically from the premises. The premises state that fish are not mammals and there are no whales that are fish, but this does not imply that whales are reptiles.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are not Y. \nThere are no Z that are X. \n∴ Every Z is Y.",
+    "quasar_answer": false
+  },
+  "e5631f7b-ab47-450c-8a53-234b21ca674f": {
+    "syllogism": "No cats are dogs. No dogs are elephants. It therefore follows that some elephants are cats.",
+    "quasar_full": "s1 (Abstraction): \nLet X = cats, Y = dogs, Z = elephants.\nThe syllogism becomes: No X are Y, No Y are Z.\n\ns2 (Formalisation): \nThe formal symbolic structure is: \n1. ∀x (¬X(x) ∨ Y(x))\n2. ∀y (¬Y(y) ∨ Z(y))\n∴ ∃z Z(z)\n\ns3 (Explanation): \nThe conclusion ∃z Z(z) implies that there exists an elephant, but the premises only state that cats are not dogs and dogs are not elephants. There is no logical connection between cats and elephants.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: \n1. ∀x (¬X(x) ∨ Y(x))\n2. ∀y (¬Y(y) ∨ Z(y))\n∴ ∃z Z(z)",
+    "quasar_answer": false
+  },
+  "77280b1f-86d3-4978-8e24-911afb041753": {
+    "syllogism": "Every single human being is a mammal. There are no mammals whatsoever that are insects. It follows that no insect is a human.",
+    "quasar_full": "s1 (Abstraction): \nLet X = human being, Y = mammal, Z = insect.\nThe syllogism can be rewritten as: Every X is Y, There are no Z that are Y, It follows that no Z is X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∀x (X(x) → Y(x)) ∧ ¬∃z (Z(z) ∧ Y(z)) ⊢ ¬∃z (Z(z) ∧ X(z))\n\ns3 (Explanation): \nThe conclusion follows logically from the premises because if all X are Y and there are no Z that are Y, then it logically follows that there are no Z that are X.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "The formal symbolic structure is: ∀x (X(x) → Y(x)) ∧ ¬∃z (Z(z) ∧ Y(z)) ⊢ ¬∃z (Z(z) ∧ X(z))",
+    "quasar_answer": true
+  },
+  "a9439ee5-6ef1-4f23-acbd-fcf3446c1fee": {
+    "syllogism": "There are no mammals that are birds. It is not true that any reptile is a mammal. It is the case that some reptiles are birds.",
+    "quasar_full": "s1 (Abstraction): \nLet X = mammals, Y = birds, Z = reptiles.\nThe syllogism becomes: There are no X that are Y. It is not true that any Z is X. It is the case that some Z are Y.\n\ns2 (Formalisation): \nAll X are not Y. No Z is X. Some Z are Y.\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The first premise states that there are no mammals that are birds, but the second premise states that some reptiles are birds, which contradicts the first premise.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are not Y. No Z is X. Some Z are Y.",
+    "quasar_answer": false
+  },
+  "8c3eb056-4c7d-46ed-8311-456035f8bdeb": {
+    "syllogism": "Birds are in no way fish. There exist no fish that are amphibians. Amphibians are in no way birds.",
+    "quasar_full": "s1 (Abstraction): \nLet X = birds, Y = fish, Z = amphibians.\n\ns2 (Formalisation): \n1. All X are not Y.\n2. No Y are Z.\n3. No Z are X.\n\ns3 (Explanation): \nThe conclusion does not follow logically from the premises. The premises only establish that there is no overlap between the categories, but they do not provide any information about the existence of any members in these categories.",
+    "quasar_s2": "1. All X are not Y.\n2. No Y are Z.\n3. No Z are X.",
+    "quasar_answer": null
+  },
+  "a6e441f6-ef07-4761-a2de-196d802c37fd": {
+    "syllogism": "Every single object that is a spoon is a musical instrument. Any object that is a fork is a spoon. Therefore, it must be the case that all forks are musical instruments.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"object that is a spoon\", Y be \"musical instrument\", Z be \"object that is a fork\".\nThe syllogism becomes: Every X is Y, Any Z is X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∀x (X(x) → Y(x)), ∀z (Z(z) → X(z)) ∴ ∀z Y(z)\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises only establish a relationship between spoons and musical instruments, and between forks and spoons, but do not provide any information about the relationship between forks and musical instruments.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: ∀x (X(x) → Y(x)), ∀z (Z(z) → X(z)) ∴ ∀z Y(z)",
+    "quasar_answer": false
+  },
+  "4e88a5ca-2ed3-4fe8-b8d6-32a58acaab84": {
+    "syllogism": "There is nothing that is both a living thing and an animal. Not a single thing known as a human is a living thing. This demonstrates that a portion of humans are not animals.",
+    "quasar_full": "s1 (Abstraction): \nLet X = living thing, Y = animal, Z = human.\nThe syllogism can be rewritten as: There is nothing that is both an X and a Y. Not a single Z is an X. This demonstrates that a portion of Z are not Y.\n\ns2 (Formalisation): \nThe formal symbolic structure is: \n1. ∀x (x is Y → ¬∃y (y is X ∧ y is Y))\n2. ∀z (z is Z → ¬z is X)\n3. ∴ ∃z (z is Z ∧ z is not Y)\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The first premise states that nothing that is both an X and a Y exists, but it does not imply that any Z are not Y. The second premise only states that no Z are X, but it does not provide information about the relationship between Z and Y.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: \n1. ∀x (x is Y → ¬∃y (y is X ∧ y is Y))\n2. ∀z (z is Z → ¬z is X)\n3. ∴ ∃z (z is Z ∧ z is not Y)",
+    "quasar_answer": false
+  },
+  "4f1911da-5730-4f99-a975-7df5a924be19": {
+    "syllogism": "Anything that is a square is not a circle. There are no triangles that are squares. Consequently, every triangle is a circle.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"square,\" Y be \"circle,\" and Z be \"triangle.\"\n\ns2 (Formalisation): \nPremise 1: All X are not Y (All squares are not circles)\nPremise 2: There are no Z that are X (There are no triangles that are squares)\nConclusion: All Z are Y (Every triangle is a circle)\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises only discuss the relationship between squares and circles, and the relationship between triangles and squares. There is no information about the relationship between triangles and circles.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "Premise 1: All X are not Y (All squares are not circles)\nPremise 2: There are no Z that are X (There are no triangles that are squares)\nConclusion: All Z are Y (Every triangle is a circle)",
+    "quasar_answer": false
+  },
+  "2f1bc027-a95e-4087-a4d1-a15f3c7dd637": {
+    "syllogism": "Every human is a robot. Any person that is a child is a human. It can be concluded that every child is a robot.",
+    "quasar_full": "s1 (Abstraction): \nLet X = human, Y = robot, Z = child.\n\ns2 (Formalisation): \nAll X are Y (Every human is a robot).\nAll Z are X (Any person that is a child is a human).\n∴ All Z are Y (It can be concluded that every child is a robot).\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The first premise states that every human is a robot, but it does not provide any information about children. The second premise only connects children to humans, not to robots.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are Y (Every human is a robot).\nAll Z are X (Any person that is a child is a human).\n∴ All Z are Y (It can be concluded that every child is a robot).",
+    "quasar_answer": false
+  },
+  "58aeed6e-5e10-4770-8642-f22981d061ae": {
+    "syllogism": "There are no moons that are planets. It is also the case that no stars are moons. From this, it is said that some stars are planets.",
+    "quasar_full": "s1 (Abstraction): \nLet X = moons, Y = planets, Z = stars.\nThe syllogism becomes: There are no X that are Y. There are no Z that are X. Some Z are Y.\n\ns2 (Formalisation): \nThe formal symbolic structure is: \n1. ∀x (¬(x is a Y))\n2. ∀z (¬(z is an X))\n3. ∃z (z is a Y)\n\ns3 (Explanation): \nThe conclusion \"Some Z are Y\" contradicts the first premise \"There are no X that are Y\", which states that no X (moons) are Y (planets). This is a direct contradiction, making the conclusion invalid.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: \n1. ∀x (¬(x is a Y))\n2. ∀z (¬(z is an X))\n3. ∃z (z is a Y)",
+    "quasar_answer": false
+  },
+  "3833c1e0-8229-480c-a600-8ea9dd34cd08": {
+    "syllogism": "There are no fish that are insects. There are no fish that are mammals. Consequently, no mammals are insects.",
+    "quasar_full": "s1 (Abstraction): \nLet X = fish, Y = insects, Z = mammals.\n\ns2 (Formalisation): \nAll X are not Y. All X are not Z. ∴ No Z are Y.\n\ns3 (Explanation): \nThe conclusion follows logically from the premises. If all fish are not insects and all fish are not mammals, it logically follows that no mammals are insects, since fish is a subset of mammals.\n\ns4 (Answering): \nvalid",
+    "quasar_s2": "All X are not Y. All X are not Z. ∴ No Z are Y.",
+    "quasar_answer": true
+  },
+  "e2da3b2b-a0e8-4cc8-b401-c163ce11facb": {
+    "syllogism": "It is the case that no cat is an amphibian. There are no fish that are cats. A number of fish are not amphibians.",
+    "quasar_full": "s1 (Abstraction): \nLet X = cat, Y = amphibian, Z = fish.\nNo X is Y, No Z is X, Some Z are not Y.\n\ns2 (Formalisation): \nAll X are not Y, All Z are not X, Some Z are not Y.\n\ns3 (Explanation): \nThe conclusion \"Some Z are not Y\" is logically implied by the premises, as the premises state that all cats are not amphibians and all fish are not cats, which together imply that some fish are not amphibians.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "All X are not Y, All Z are not X, Some Z are not Y.",
+    "quasar_answer": true
+  },
+  "d0da7e98-3321-482c-b114-bac6a8f5c71a": {
+    "syllogism": "There exist some things which are animals that are dogs. It is also true that all cats are animals. From these two statements, it can be concluded that some cats are not dogs.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"animals that are dogs,\" Y be \"cats,\" and Z be \"dogs.\"\n\ns2 (Formalisation): \nPremise 1: Some X are Y (Some animals that are dogs are cats)\nPremise 2: All Y are Z (All cats are dogs)\nConclusion: Some Y are not Z (Some cats are not dogs)\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises suggest that cats are a subset of animals that are dogs, but the conclusion contradicts this by stating that some cats are not dogs.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "Premise 1: Some X are Y (Some animals that are dogs are cats)\nPremise 2: All Y are Z (All cats are dogs)\nConclusion: Some Y are not Z (Some cats are not dogs)",
+    "quasar_answer": false
+  },
+  "c2ca08ab-0b24-4c69-871c-3ea2e3309137": {
+    "syllogism": "Not a single mammal is a bird. There are some pets which are mammals. Thus, some pets are birds.",
+    "quasar_full": "s1 (Abstraction): \nLet X = mammals, Y = birds, Z = pets.\nThe syllogism becomes: Not all X are Y, Some Z are X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ¬∀X Y, ∃Z X, ∴ ∃Z Y.\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises only state that some pets are mammals, but there is no information about pets being birds.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: ¬∀X Y, ∃Z X, ∴ ∃Z Y.",
+    "quasar_answer": false
+  },
+  "f0c312d0-7a22-48ee-bc8e-1a6d7db54d7b": {
+    "syllogism": "A few clouds are mammals. Every mammal is an animal. It follows from this that some animals are clouds.",
+    "quasar_full": "s1 (Abstraction): \nLet X = clouds, Y = mammals, Z = animals.\nThe syllogism becomes: A few X are Y. Every Y is Z. It follows from this that some Z are X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: \n- A few X are Y (¬∃YX)\n- ∀YZ\n∴ ∃ZX\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The first premise states that a few clouds are mammals, which means there are some clouds that are mammals. The second premise states that every mammal is an animal, but it does not provide any information about animals that are clouds.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: \n- A few X are Y (¬∃YX)\n- ∀YZ\n∴ ∃ZX",
+    "quasar_answer": false
+  },
+  "3fb546db-f239-4494-8809-99a5d580567f": {
+    "syllogism": "There is no human that is an animal. No animals are women whatsoever. Therefore, no woman is a human.",
+    "quasar_full": "s1 (Abstraction): \nLet X = human, Y = animal, Z = woman.\n\ns2 (Formalisation): \nAll X are not Y. \nNo Y are Z.\n\ns3 (Explanation): \nThe conclusion \"no woman is a human\" does not logically follow from the premises. The premises only state that there is no human that is an animal and no animals are women, but they do not provide information about the relationship between women and humans.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "All X are not Y. \nNo Y are Z.",
+    "quasar_answer": false
+  },
+  "9fa82985-9169-4636-b972-01d478e6360e": {
+    "syllogism": "Every single spider is a musical instrument. Anything that is a tarantula is a spider. Therefore, some tarantulas are musical instruments.",
+    "quasar_full": "s1 (Abstraction): \nLet X = spider, Y = musical instrument, Z = tarantula.\n\ns2 (Formalisation): \nAll X are Y. All Z are X. Therefore, some Z are Y.\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that all spiders are musical instruments and all tarantulas are spiders, but this does not imply that some tarantulas are musical instruments. The conclusion is an overgeneralization.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "All X are Y. All Z are X. Therefore, some Z are Y.",
+    "quasar_answer": false
+  },
+  "7448654d-1b67-417c-8e36-918c53e8a1f4": {
+    "syllogism": "All things that are lizards are vertebrates. A number of lizards are also reptiles. Consequently, some reptiles are vertebrates.",
+    "quasar_full": "s1 (Abstraction): \nLet X = things that are lizards, Y = vertebrates, Z = reptiles.\nSo, the syllogism becomes: All X are Y, Some X are Z.\n\ns2 (Formalisation): \nThe formal symbolic structure is: All X are Y, Some X are Z. ∴ Some Z are Y.\n\ns3 (Explanation): \nThe conclusion follows logically from the premises because if all lizards are vertebrates and some lizards are reptiles, then some reptiles must be vertebrates.\n\ns4 (Answering): The answer is: valid",
+    "quasar_s2": "The formal symbolic structure is: All X are Y, Some X are Z. ∴ Some Z are Y.",
+    "quasar_answer": true
+  },
+  "cfc5a2e0-56ee-459b-8bbf-04c56ad517c3": {
+    "syllogism": "It is the case that no dog is a cat. It is also the case that no bird is a cat. Therefore, no bird is a dog.",
+    "quasar_full": "s1 (Abstraction): \nLet X = dog, Y = cat, Z = bird.\nThe syllogism becomes: No X is Y, No Z is Y.\n\ns2 (Formalisation): \nThe formal symbolic structure is: \n1. ∀x (X(x) → ¬Y(x))\n2. ∀z (Z(z) → ¬Y(z))\n∴ ∀z (Z(z) → ¬X(z))\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that no X (dog) and no Z (bird) are Y (cat), but this does not imply that no bird is a dog.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: \n1. ∀x (X(x) → ¬Y(x))\n2. ∀z (Z(z) → ¬Y(z))\n∴ ∀z (Z(z) → ¬X(z))",
+    "quasar_answer": false
+  },
+  "a6b9a38f-f372-4ffe-b48a-ea17557c2b24": {
+    "syllogism": "There are no lions that are mammals. No elephants are considered lions. Some elephants are not mammals.",
+    "quasar_full": "s1 (Abstraction): \nLet X = lions, Y = mammals, Z = elephants.\n\ns2 (Formalisation): \nAll X are not Y. \nNo Z are X. \nSome Z are not Y.\n\ns3 (Explanation): \nThe conclusion \"Some Z are not Y\" logically follows from the premises, as the first premise establishes a universal negative, and the second premise provides a specific instance of that negative.\n\ns4 (Answering): \nvalid",
+    "quasar_s2": "All X are not Y. \nNo Z are X. \nSome Z are not Y.",
+    "quasar_answer": true
+  },
+  "74186e65-643f-4843-8443-02e6ad512587": {
+    "syllogism": "Every flower is an animal. No rose is an animal. There are roses that are not flowers.",
+    "quasar_full": "s1 (Abstraction): \nLet X = flower, Y = animal, Z = rose.\n\ns2 (Formalisation): \nAll X are Y. (Every flower is an animal)\nNo Z is Y. (No rose is an animal)\n∴ There are Z that are not X. (There are roses that are not flowers)\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The first premise states that every flower is an animal, but the second premise states that no rose is an animal, which contradicts the first premise.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are Y. (Every flower is an animal)\nNo Z is Y. (No rose is an animal)\n∴ There are Z that are not X. (There are roses that are not flowers)",
+    "quasar_answer": false
+  },
+  "3cbec47e-2693-47fe-8e9a-2afa90c0a833": {
+    "syllogism": "It is the case that no integer is a fraction. It is also not the case that any decimal is a fraction. Consequently, all decimals are integers.",
+    "quasar_full": "s1 (Abstraction): \nLet X = integer, Y = fraction, Z = decimal.\n\ns2 (Formalisation): \nPremise 1: ∀x (If x is an X, then x is not a Y)\nPremise 2: ∀x (If x is a Z, then x is not a Y)\nConclusion: ∀z (If z is a Z, then z is an X)\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that integers and decimals are not fractions, but this does not imply that all decimals are integers.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "Premise 1: ∀x (If x is an X, then x is not a Y)\nPremise 2: ∀x (If x is a Z, then x is not a Y)\nConclusion: ∀z (If z is a Z, then z is an X)",
+    "quasar_answer": false
+  },
+  "525bac06-7136-4770-a6da-19a35cab2610": {
+    "syllogism": "There are no circles that are polygons. Every single circle is a triangle. There are triangles which are not polygons.",
+    "quasar_full": "s1 (Abstraction): \nLet X = circle, Y = polygon, Z = triangle.\nSo, the syllogism becomes: There are no X that are Y. Every X is Z. There are Z that are not Y.\n\ns2 (Formalisation): \nThe formal symbolic structure is: \n1. ∀x (¬(x is Y))\n2. ∀x (x is Z → x is Y)\n3. ∃z (z is Z ∧ ¬(z is Y))\n\ns3 (Explanation): \nFrom the first premise, we know no X is Y. The second premise states every X is Z, but since no X is Y, it implies no Z is Y. However, the third premise states there are Z that are not Y, which contradicts the conclusion that no Z is Y.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: \n1. ∀x (¬(x is Y))\n2. ∀x (x is Z → x is Y)\n3. ∃z (z is Z ∧ ¬(z is Y))",
+    "quasar_answer": false
+  },
+  "23c32d17-4e6c-4589-b414-107f6421dfc7": {
+    "syllogism": "It is true that every river is a body of water. All bodies of water are considered to be natural phenomena. We can thus conclude that some natural phenomena are rivers.",
+    "quasar_full": "s1 (Abstraction): \nLet X = river, Y = body of water, Z = natural phenomenon.\nThe syllogism can be rewritten as: Every X is Y, All Y are Z, Some Z are X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∀X (X → Y) ∧ ∀Y (Y → Z) ∴ ∃Z (Z → X)\n\ns3 (Explanation): \nThe conclusion \"Some Z are X\" logically follows from the premises \"Every X is Y\" and \"All Y are Z\". This is because if every X is Y and all Y are Z, then some Z must be X.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "The formal symbolic structure is: ∀X (X → Y) ∧ ∀Y (Y → Z) ∴ ∃Z (Z → X)",
+    "quasar_answer": true
+  },
+  "04098300-a9af-411d-9d92-088df29f0a0e": {
+    "syllogism": "It is the case that no fruit is citrus. Every single orange is citrus. It follows from this that some oranges are not fruits.",
+    "quasar_full": "s1 (Abstraction): \nLet X = fruit, Y = citrus, Z = orange.\nThe syllogism becomes: No X is Y, All Z are Y.\n\ns2 (Formalisation): \nThe formal symbolic structure is: \n1. ∀x (¬Y(x) ∨ ¬X(x)) (No X is Y)\n2. ∀z Z(z) → Y(z) (All Z are Y)\n∴ ∃z (¬X(z) ∧ Z(z)) (Some Z are not X)\n\ns3 (Explanation): \nThe conclusion \"Some Z are not X\" does not logically follow from the premises. The premises state that all Z (oranges) are Y (citrus), but they do not provide any information about the existence of non-X (non-fruits) that are Z (oranges).\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: \n1. ∀x (¬Y(x) ∨ ¬X(x)) (No X is Y)\n2. ∀z Z(z) → Y(z) (All Z are Y)\n∴ ∃z (¬X(z) ∧ Z(z)) (Some Z are not X)",
+    "quasar_answer": false
+  },
+  "235d9e5b-73a3-4f10-ac6c-6d60e8693c3f": {
+    "syllogism": "Any item classified as a table has a surface that is flat on top. Some pieces of office furniture are tables. Thus, some office furniture has a flat surface on top.",
+    "quasar_full": "s1 (Abstraction): \n- X: item classified as a table\n- Y: surface that is flat on top\n- Z: pieces of office furniture\n\ns2 (Formalisation): \nAll X are Y. Some Z are X.\n\ns3 (Explanation): \nThe conclusion follows logically from the premises. If all tables have a flat surface on top and some office furniture are tables, then some office furniture must have a flat surface on top.\n\ns4 (Answering): valid",
+    "quasar_s2": "All X are Y. Some Z are X.",
+    "quasar_answer": true
+  },
+  "bc05f308-0b8a-4c9a-9ab3-20479b8653e6": {
+    "syllogism": "There are no fish that are mammals. There are no mammals that are rocks. It follows that some rocks are fish.",
+    "quasar_full": "s1 (Abstraction): \nLet X = fish, Y = mammals, Z = rocks.\n\ns2 (Formalisation): \nAll X are not Y. All Y are not Z. ∴ Some Z are X.\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that fish are not mammals and mammals are not rocks, but this does not imply that rocks are fish.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are not Y. All Y are not Z. ∴ Some Z are X.",
+    "quasar_answer": false
+  },
+  "f1bea42f-abe8-43fd-b15d-eb33c62cec71": {
+    "syllogism": "It is true that no chair is made of wood. It is a fact that no car is made of wood. Therefore, some cars are chairs.",
+    "quasar_full": "s1 (Abstraction): \nLet X = chair, Y = car, Z = made of wood.\nSo, the syllogism becomes: No X is Z, No Y is Z.\n\ns2 (Formalisation): \nThe formal symbolic structure is: \n- All X are not Z (No X is Z)\n- All Y are not Z (No Y is Z)\n∴ Some Y are X (Therefore, some cars are chairs)\n\ns3 (Explanation): \nThe conclusion \"Some Y are X\" does not logically follow from the premises. The premises state that both X and Y are not Z, but it does not provide any information about the relationship between X and Y.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: \n- All X are not Z (No X is Z)\n- All Y are not Z (No Y is Z)\n∴ Some Y are X (Therefore, some cars are chairs)",
+    "quasar_answer": false
+  },
+  "29aec5d0-43b1-4e65-baf7-5a69d3d6e397": {
+    "syllogism": "There is nothing which is a shape that is a geometric figure. All circles are geometric figures. It follows from this that some circles are not shapes.",
+    "quasar_full": "s1 (Abstraction): \nLet X = shape, Y = geometric figure, Z = circle.\nThe syllogism becomes: There is nothing which is a shape that is a geometric figure. All circles are geometric figures. It follows from this that some circles are not shapes.\n\ns2 (Formalisation): \nAll X are not Y. All Z are Y. ∴ Some Z are not X.\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The first premise states that there is nothing which is a shape that is a geometric figure, implying that no shape is a geometric figure. However, the second premise states that all circles are geometric figures, which contradicts the first premise. Therefore, the conclusion that some circles are not shapes does not logically follow.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are not Y. All Z are Y. ∴ Some Z are not X.",
+    "quasar_answer": false
+  },
+  "2aadf950-2305-48c3-89f0-a7528a0dae8e": {
+    "syllogism": "Among the creatures that are dogs, some are not fish. Every single creature that is a dog is a cat. It must be the case that not a single cat is a fish.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"creatures that are dogs\", Y be \"fish\", Z be \"cats\".\n\ns2 (Formalisation): \nAll X are not Y. All X are Z.\n\ns3 (Explanation): \nThe first premise states that some dogs are not fish, but the second premise states that every dog is a cat, which is contradictory. This creates a logical inconsistency.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "All X are not Y. All X are Z.",
+    "quasar_answer": false
+  },
+  "387ccffa-07d9-4b59-9668-aa5370d1594e": {
+    "syllogism": "It is true that some physicians are specialists. All physicians are considered doctors. Therefore, it logically follows that some doctors are specialists.",
+    "quasar_full": "s1 (Abstraction): \nLet X = physicians, Y = specialists, Z = doctors.\n\ns2 (Formalisation): \nAll X are Z (All physicians are doctors).\nSome X are Y (Some physicians are specialists).\n\ns3 (Explanation): \nThe conclusion \"Some Z are Y\" (Some doctors are specialists) follows logically from the premises. The first premise states all physicians are doctors, and the second premise states some physicians are specialists. Therefore, it logically follows that some doctors are specialists.\n\ns4 (Answering): The answer is: valid.",
+    "quasar_s2": "All X are Z (All physicians are doctors).\nSome X are Y (Some physicians are specialists).",
+    "quasar_answer": true
+  },
+  "ad5b56d1-d0d0-48e0-b5a2-55bd1ab7f5f3": {
+    "syllogism": "There are no televisions that are not emotions. It is a fact that every emotion is a tiny creature. This leads to the conclusion that some tiny things are televisions.",
+    "quasar_full": "s1 (Abstraction): \nLet X = televisions, Y = emotions, Z = tiny creatures.\n\ns2 (Formalisation): \nAll X are Y. \nAll Y are Z. \n∴ Some Z are X.\n\ns3 (Explanation): \nThe conclusion \"Some Z are X\" does not logically follow from the premises. The premises state that all televisions are emotions and all emotions are tiny creatures, but it does not imply that some tiny creatures are televisions.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are Y. \nAll Y are Z. \n∴ Some Z are X.",
+    "quasar_answer": false
+  },
+  "6a4a6a96-2a79-4f42-9120-1cadc05fc95b": {
+    "syllogism": "There are no bicycles which are vehicles. Every single bicycle is a car. Some cars fail to be vehicles.",
+    "quasar_full": "s1 (Abstraction): \nLet X = bicycles, Y = vehicles, Z = cars.\n\ns2 (Formalisation): \nAll X are not Y. All X are Z. Some Z are not Y.\n\ns3 (Explanation): \nThe conclusion \"Some cars fail to be vehicles\" is actually the negation of the second premise \"All X are Z\" (bicycles are cars), which is a contradiction. This makes the syllogism invalid.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "All X are not Y. All X are Z. Some Z are not Y.",
+    "quasar_answer": false
+  },
+  "b0adc0e7-5435-4b7b-a957-82c87255700e": {
+    "syllogism": "There are no teachers that are students. It is not true that any student is a professional. A certain number of professionals are not teachers.",
+    "quasar_full": "s1 (Abstraction): \nLet X = teachers, Y = students, Z = professionals.\n\ns2 (Formalisation): \n1. All X are not Y.\n2. All Y are not Z.\n3. Some Z are not X.\n\ns3 (Explanation): \nThe conclusion does not follow logically from the premises. Premise 1 and premise 2 do not provide any information about the relationship between Z and X, so we cannot conclude that some Z are not X.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "1. All X are not Y.\n2. All Y are not Z.\n3. Some Z are not X.",
+    "quasar_answer": false
+  },
+  "a56035bf-d2d3-46d3-8865-27b7846c5126": {
+    "syllogism": "Anything that is a book is also an object. It is impossible for an object to be a feeling. Therefore, we can deduce that some feelings are not books.",
+    "quasar_full": "s1 (Abstraction): \nLet X = book, Y = object, Z = feeling.\nThe syllogism becomes: \nAnything that is a book is also an object. \nIt is impossible for an object to be a feeling. \nTherefore, we can deduce that some feelings are not books.\n\ns2 (Formalisation): \nAll X are Y.\nNo Z is Y.\n∴ Some Z are not X.\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The first premise states that all books are objects, but it does not provide any information about feelings. The second premise states that no object can be a feeling, but it does not relate to books.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are Y.\nNo Z is Y.\n∴ Some Z are not X.",
+    "quasar_answer": false
+  },
+  "89a56316-a3ce-46c4-8a5e-8f553d2d6981": {
+    "syllogism": "The set of aquatic animals has no intersection with the set of vertebrates with gills. All fish are vertebrates with gills. Fish cannot be considered aquatic animals.",
+    "quasar_full": "s1 (Abstraction): \nLet X = aquatic animals, Y = vertebrates with gills, Z = fish.\n\ns2 (Formalisation): \nAll X are not Y. All Z are Y. ∴ Z are not X.\n\ns3 (Explanation): \nThe conclusion follows logically from the premises. If all Z (fish) are Y (vertebrates with gills) and there is no intersection between X (aquatic animals) and Y, then it logically follows that Z (fish) cannot be considered X (aquatic animals).\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "All X are not Y. All Z are Y. ∴ Z are not X.",
+    "quasar_answer": true
+  },
+  "15541c10-d7a3-4580-a09e-84182fb65d42": {
+    "syllogism": "There are no vegetables that are fruits. Anything that is a vegetable is a plant. It's the case that some plants fail to be fruits.",
+    "quasar_full": "s1 (Abstraction): \nLet X = vegetable, Y = fruit, Z = plant.\n\ns2 (Formalisation): \n1. All X are not Y.\n2. All X are Z.\n3. Some Z are not Y.\n\ns3 (Explanation): \nThe conclusion does not follow logically from the premises. The premises state that all vegetables are not fruits and all vegetables are plants, but they do not provide any information about plants that are not vegetables. Therefore, we cannot conclude that some plants are not fruits.\n\ns4 (Answering): \nThe answer is: invalid.",
+    "quasar_s2": "1. All X are not Y.\n2. All X are Z.\n3. Some Z are not Y.",
+    "quasar_answer": false
+  },
+  "df3818f6-ac5d-4cc3-8b73-a63b356b724e": {
+    "syllogism": "It is the case that no meat is a thing that grows in the ground. Every single vegetable is a thing that grows in the ground. It can be deduced that there are some vegetables who are not meats.",
+    "quasar_full": "s1 (Abstraction): \nLet X = meat, Y = thing that grows in the ground, Z = vegetable.\n\ns2 (Formalisation): \nAll X are not Y. All Y are Z. ∴ Some Z are not X.\n\ns3 (Explanation): \nThe conclusion \"Some Z are not X\" does not logically follow from the premises. The premises state that all X are not Y and all Y are Z, but this does not imply that some Z are not X. It only implies that all Z are not X.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are not Y. All Y are Z. ∴ Some Z are not X.",
+    "quasar_answer": false
+  },
+  "9bdc92be-0708-4acd-8271-cda879cc2602": {
+    "syllogism": "There is no animal that is a mineral. Not one dog is a mineral. As a result, no dog is an animal.",
+    "quasar_full": "s1 (Abstraction): \nLet X = animal, Y = mineral, Z = dog.\n\ns2 (Formalisation): \nAll X are not Y. \nNot all Z are X.\n\ns3 (Explanation): \nThe conclusion \"no Z is X\" logically follows from the premises. The first premise states that all animals are not minerals, and the second premise states that not all dogs are animals. However, the conclusion \"no dog is an animal\" is not logically entailed by the premises. The premises only imply that there might be animals that are not dogs, but they do not rule out the possibility that dogs are animals.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are not Y. \nNot all Z are X.",
+    "quasar_answer": false
+  },
+  "8b2091de-64b6-4c3d-8057-8ea0f518275b": {
+    "syllogism": "There are no plants that are vegetables which can also be called carnivores. Every cabbage is a vegetable. Therefore, no cabbage is a carnivore.",
+    "quasar_full": "s1 (Abstraction): \nLet X = plants, Y = vegetables, Z = carnivores.\n\ns2 (Formalisation): \nAll X are not (Y and Z). \nAll Y are X.\n\ns3 (Explanation): \nThe conclusion \"no cabbage is a carnivore\" follows logically from the premises, as the premises state that there are no plants that are both vegetables and carnivores, and every cabbage is a vegetable. Therefore, it cannot be a carnivore.\n\ns4 (Answering): \nThe answer is: valid.",
+    "quasar_s2": "All X are not (Y and Z). \nAll Y are X.",
+    "quasar_answer": true
+  },
+  "9ff293bd-554c-4858-aff3-3b7bede232f9": {
+    "syllogism": "The set of letters in the alphabet and the set of numbers are disjoint. Every single number is a vowel. Therefore, some vowels are not letters of the alphabet.",
+    "quasar_full": "s1 (Abstraction): \nLet X be the set of letters in the alphabet, Y be the set of numbers, and Z be the set of vowels.\n\ns2 (Formalisation): \nAll X are not Y (The set of letters in the alphabet and the set of numbers are disjoint).\nAll Y are Z (Every single number is a vowel).\n∴ Some Z are not X (Therefore, some vowels are not letters of the alphabet).\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that numbers and letters are disjoint and every number is a vowel, but this does not imply that there are vowels that are not letters.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are not Y (The set of letters in the alphabet and the set of numbers are disjoint).\nAll Y are Z (Every single number is a vowel).\n∴ Some Z are not X (Therefore, some vowels are not letters of the alphabet).",
+    "quasar_answer": false
+  },
+  "3f37120d-8f38-41d2-aedb-9906f3fd3c7c": {
+    "syllogism": "Each and every book is a person. All books are made of water. Therefore, it is the case that some things made of water are people.",
+    "quasar_full": "s1 (Abstraction): \nLet X = book, Y = person, Z = made of water.\n\ns2 (Formalisation): \nAll X are Y, All X are Z.\n\ns3 (Explanation): \nThe conclusion \"some things made of water are people\" does not logically follow from the premises. The premises state that all books are people and all books are made of water, but there is no information about other things made of water.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are Y, All X are Z.",
+    "quasar_answer": false
+  },
+  "fd048dba-0796-42f0-a6b0-c531b5393d72": {
+    "syllogism": "The set of snakes and the set of lizards are mutually exclusive. Every single lizard is a reptile. It is a logical consequence that some reptiles are not snakes.",
+    "quasar_full": "s1 (Abstraction): \nLet X = snakes, Y = lizards, Z = reptiles.\n\ns2 (Formalisation): \n1. All X are not Y (mutually exclusive).\n2. All Y are Z.\n3. It is a logical consequence that some Z are not X.\n\ns3 (Explanation): \nThe conclusion does not follow logically from the premises. The premises only state that snakes and lizards are mutually exclusive, and all lizards are reptiles. They do not provide any information about the existence of reptiles that are not snakes.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "1. All X are not Y (mutually exclusive).\n2. All Y are Z.\n3. It is a logical consequence that some Z are not X.",
+    "quasar_answer": false
+  },
+  "33401764-6b38-4c64-8983-e1c1062d1f98": {
+    "syllogism": "There are no fish that are insects. It is a fact that no insect is an acquatic animal. This leads to the conclusion that some acquatic animals are fish.",
+    "quasar_full": "s1 (Abstraction): \nLet X = fish, Y = insects, Z = aquatic animals.\n\ns2 (Formalisation): \nAll X are not Y. \nAll Y are not Z.\n\ns3 (Explanation): \nThe conclusion \"some Z are X\" does not logically follow from the premises. The premises only state that there are no fish that are insects and no insects are aquatic animals, but they do not provide any information about the existence of aquatic animals that are not insects.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are not Y. \nAll Y are not Z.",
+    "quasar_answer": false
+  },
+  "14c5cb30-91db-4489-8cbb-f0ce8a396fdd": {
+    "syllogism": "No animal is a cat. At least one dog is an animal. There is at least one dog that is a cat.",
+    "quasar_full": "s1 (Abstraction): \nLet X = animal, Y = cat, Z = dog.\nNo animal is a cat: ∀x (Animal(x) → ¬Cat(x))\nAt least one dog is an animal: ∃x (Dog(x) ∧ Animal(x))\nThere is at least one dog that is a cat: ∃x (Dog(x) ∧ Cat(x))\n\ns2 (Formalisation):\n1. ∀x (Animal(x) → ¬Cat(x))\n2. ∃x (Dog(x) ∧ Animal(x))\n∴ ∃x (Dog(x) ∧ Cat(x))\n\ns3 (Explanation):\nThe conclusion ∃x (Dog(x) ∧ Cat(x)) does not logically follow from the premises. The first premise states that no animal is a cat, but the second premise only guarantees that at least one dog is an animal, not that it is a cat.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "1. ∀x (Animal(x) → ¬Cat(x))\n2. ∃x (Dog(x) ∧ Animal(x))\n∴ ∃x (Dog(x) ∧ Cat(x))",
+    "quasar_answer": false
+  },
+  "71ce63cd-6cfe-4516-a4f0-b3153f751ced": {
+    "syllogism": "There exist some plants that are computers. Every single computer is a machine. Thus, some machines are plants.",
+    "quasar_full": "s1 (Abstraction): \nLet X = plants, Y = computers, Z = machines.\n\ns2 (Formalisation): \nAll X are Y (All plants are computers).\nAll Y are Z (Every single computer is a machine).\n∴ Some Z are X (Thus, some machines are plants).\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that all plants are computers and all computers are machines, but it does not imply that some machines are plants. The premises only imply that all plants are machines.\n\ns4 (Answering): The answer is: invalid.",
+    "quasar_s2": "All X are Y (All plants are computers).\nAll Y are Z (Every single computer is a machine).\n∴ Some Z are X (Thus, some machines are plants).",
+    "quasar_answer": false
+  },
+  "bf5b5254-869c-4d4d-8be0-f0f3c6ac3d93": {
+    "syllogism": "Any apple is a fruit. Every single fruit is an edible plant. It is a logical conclusion that some edible plants are apples.",
+    "quasar_full": "s1 (Abstraction): \nLet X = apple, Y = fruit, Z = edible plant.\nThe syllogism becomes: Any X is Y. Every Y is Z. It is a logical conclusion that some Z are X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∀X (X → Y) ∧ ∀Y (Y → Z) ∴ ∃Z (Z → X)\n\ns3 (Explanation): \nThe conclusion \"some Z are X\" does not logically follow from the premises. The premises state that every Y is Z, but there is no information about the existence of Z that are not Y.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: ∀X (X → Y) ∧ ∀Y (Y → Z) ∴ ∃Z (Z → X)",
+    "quasar_answer": false
+  },
+  "497d159a-3702-4c43-8395-74a58f6ba139": {
+    "syllogism": "There exist flowers that are not animals. Every single flower is a plant. It follows that not a single plant is an animal.",
+    "quasar_full": "s1 (Abstraction): \nLet X = flowers, Y = animals, Z = plants.\n\ns2 (Formalisation): \nAll X are not Y. All X are Z.\n\ns3 (Explanation): \nThe conclusion \"not a single Z is Y\" logically follows from the premises, as the premises imply that all X (flowers) are Z (plants), and it's given that no X is Y (animal).\n\ns4 (Answering): \nvalid",
+    "quasar_s2": "All X are not Y. All X are Z.",
+    "quasar_answer": true
+  },
+  "818d3f86-e66d-45e6-b347-a73c2a3c843d": {
+    "syllogism": "It is true that no rocks are non-living things. No trees are rocks. It follows that all trees are non-living things.",
+    "quasar_full": "s1 (Abstraction): \nLet X = rocks, Y = non-living things, Z = trees.\n\ns2 (Formalisation): \nAll X are Y. \nAll Z are not X.\n\ns3 (Explanation): \nThe conclusion \"all trees are non-living things\" does not logically follow from the premises. The first premise states that all rocks are non-living things, but there is no information about trees being rocks or non-rocks.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are Y. \nAll Z are not X.",
+    "quasar_answer": false
+  },
+  "fafec48c-8520-48aa-8868-a3161eab5774": {
+    "syllogism": "There is no vegetable that is also a berry. A number of the items that are fruits are not berries. It follows that some fruits are not vegetables.",
+    "quasar_full": "s1 (Abstraction): \nLet X = vegetable, Y = berry, Z = fruit.\n\ns2 (Formalisation): \nAll X are not Y. Some Z are not Y.\n\ns3 (Explanation): \nThe conclusion \"some fruits are not vegetables\" does not logically follow from the premises. The premises only state that there is no vegetable that is also a berry and some fruits are not berries, but they do not provide any information about the relationship between fruits and vegetables.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are not Y. Some Z are not Y.",
+    "quasar_answer": false
+  },
+  "9d286c8e-0c97-4332-b63c-ba27fc32e348": {
+    "syllogism": "There isn't a single circle that is a polygon. Every shape that is a triangle is a polygon. Triangles are not circles.",
+    "quasar_full": "s1 (Abstraction): \nLet X = circle, Y = polygon, Z = triangle.\n \ns2 (Formalisation): \nAll X are not Y. All Z are Y. All Z are not X.\n\ns3 (Explanation): \nThe conclusion logically follows from the premises. If all triangles are polygons and all polygons are not circles, then it logically follows that triangles are not circles.\n\ns4 (Answering): The answer is: valid",
+    "quasar_s2": "All X are not Y. All Z are Y. All Z are not X.",
+    "quasar_answer": true
+  },
+  "64de6256-16a8-4378-be6b-613d20d71a6f": {
+    "syllogism": "There exist no creatures which are animals that are predators. It is also true that no prey are animals. From these two statements, it can be concluded that some prey are predators.",
+    "quasar_full": "s1 (Abstraction): \nLet X = creatures, Y = animals, Z = predators.\nThe syllogism can be rewritten as: There exist no X that are Y and Z. It is also true that no Z are Y.\n\ns2 (Formalisation): \nThe formal symbolic structure is: \n1. ∃x (¬(Y(x) ∧ Z(x)))\n2. ∀z ¬Y(z)\nConclusion: ∃z Z(z)\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The first premise states there are no creatures that are both animals and predators, but the second premise states no predators are animals. This does not imply that some prey are predators, as the premises do not mention prey.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: \n1. ∃x (¬(Y(x) ∧ Z(x)))\n2. ∀z ¬Y(z)\nConclusion: ∃z Z(z)",
+    "quasar_answer": false
+  },
+  "7ff4af6d-5f00-4088-bd1c-edb77f97bba6": {
+    "syllogism": "It is a given that every device is a plant. No plants are phones. Therefore, it is a necessary conclusion that some phones are not devices.",
+    "quasar_full": "s1 (Abstraction): \nLet X = device, Y = plant, Z = phone.\nThe syllogism becomes: Every X is Y, No Z are Y.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∀x (X(x) → Y(x)) ∧ ¬∃z (Z(z) ∧ Y(z))\n\ns3 (Explanation): \nThe conclusion \"some phones are not devices\" is the negation of the premise \"every device is a plant.\" This is a contradiction, as the premises cannot logically lead to the conclusion.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: ∀x (X(x) → Y(x)) ∧ ¬∃z (Z(z) ∧ Y(z))",
+    "quasar_answer": false
+  },
+  "b0275480-6465-4414-b9d1-7fa4c1a5ee88": {
+    "syllogism": "Anything that is a teacher is a professional. There are some educators who are teachers. Consequently, some educators are professionals.",
+    "quasar_full": "s1 (Abstraction): \nLet X = teacher, Y = professional, Z = educator\nThe syllogism becomes: \nAnything that is an X is a Y. There are some Z who are X. Consequently, some Z are Y.\n\ns2 (Formalisation): \nAll X are Y. ∃Z(X(Z))\n∴ ∃Z(Y(Z))\n\ns3 (Explanation): \nThe conclusion logically follows from the premises. If all X are Y and there are some Z who are X, then it is reasonable to conclude that there are some Z who are Y.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "All X are Y. ∃Z(X(Z))\n∴ ∃Z(Y(Z))",
+    "quasar_answer": true
+  },
+  "834d9056-3a64-4342-be1a-10be9456f4fd": {
+    "syllogism": "There are no hexagons that are circles. Among the circles, a few are shapes with six sides. Not all shapes with six sides are hexagons.",
+    "quasar_full": "s1 (Abstraction): \nLet X = hexagons, Y = circles, Z = shapes with six sides.\n \ns2 (Formalisation): \nAll X are not Y. \nSome Y are Z. \nNot all Z are X.\n\ns3 (Explanation): \nThe conclusion does not follow logically from the premises. The first premise states that all hexagons are not circles, but the second premise states that some circles are shapes with six sides, which implies that some circles are hexagons, contradicting the first premise.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are not Y. \nSome Y are Z. \nNot all Z are X.",
+    "quasar_answer": false
+  },
+  "28608dbf-22a9-4fcd-97af-05149b762a40": {
+    "syllogism": "It is true that no cars are boats. It is a fact that no sedans are boats. Therefore, some sedans are cars.",
+    "quasar_full": "s1 (Abstraction): \nLet X = cars, Y = boats, Z = sedans.\n\ns2 (Formalisation): \nAll X are not Y (No cars are boats).\nAll Z are not Y (No sedans are boats).\n∴ Some Z are X (Some sedans are cars).\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that no cars and no sedans are boats, but this does not imply that some sedans are cars. The premises do not provide any information about the relationship between sedans and cars.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are not Y (No cars are boats).\nAll Z are not Y (No sedans are boats).\n∴ Some Z are X (Some sedans are cars).",
+    "quasar_answer": false
+  },
+  "0cb859e3-b7cf-411c-8616-f71e1e43e19e": {
+    "syllogism": "There are no animals that are rocks. It is also true that no birds are rocks. Therefore, it is argued that there are no birds which are animals.",
+    "quasar_full": "s1 (Abstraction): \nLet X = animals, Y = rocks, Z = birds.\nThe syllogism becomes: There are no X that are Y. No Z are Y. Therefore, there are no Z that are X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: \n∀X ¬(X ∩ Y) \n∀Z ¬(Z ∩ Y)\n∴ ∀Z ¬(Z ∩ X)\n\ns3 (Explanation): \nThe conclusion follows logically from the premises. If there are no animals that are rocks and no birds that are rocks, it logically follows that there are no birds that are animals.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "The formal symbolic structure is: \n∀X ¬(X ∩ Y) \n∀Z ¬(Z ∩ Y)\n∴ ∀Z ¬(Z ∩ X)",
+    "quasar_answer": true
+  },
+  "84ae9313-2f3b-4ce5-9ced-737644159945": {
+    "syllogism": "Every artist is a creative person. Every painter is a creative person. Consequently, all painters are artists.",
+    "quasar_full": "s1 (Abstraction): \nLet X = artist, Y = creative person, Z = painter.\nThe syllogism becomes: Every X is Y. Every Z is Y. Consequently, all Z are X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∀X (X → Y) ∧ ∀Z (Z → Y) ∴ ∀Z (Z → X)\n\ns3 (Explanation): \nThe conclusion follows logically from the premises because if every X and every Z are Y, then it logically follows that all Z are X.\n\ns4 (Answering): The answer is: valid",
+    "quasar_s2": "The formal symbolic structure is: ∀X (X → Y) ∧ ∀Z (Z → Y) ∴ ∀Z (Z → X)",
+    "quasar_answer": true
+  },
+  "9035925b-22bf-4b70-9bae-1caa5fb090a6": {
+    "syllogism": "The group of asteroids and the group of animals are mutually exclusive. There are no fruits which are animals. Asteroids and fruits do not belong to the same category.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"asteroids\", Y be \"animals\", Z be \"fruits\".\n\ns2 (Formalisation): \nPremise 1: All X are not Y (X ∩ Y = ∅)\nPremise 2: X and Z do not belong to the same category (X ≠ Z)\nConclusion: There are no Z which are Y.\n\ns3 (Explanation): \nThe conclusion logically follows from the premises. If X and Y are mutually exclusive, and X is not the same category as Z, then it's reasonable to conclude that Z cannot be Y.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "Premise 1: All X are not Y (X ∩ Y = ∅)\nPremise 2: X and Z do not belong to the same category (X ≠ Z)\nConclusion: There are no Z which are Y.",
+    "quasar_answer": true
+  },
+  "325efe21-8c46-4171-b870-190e28b307ff": {
+    "syllogism": "All tools are things that can be described as being made of metal. It is the case that no hammer is a thing made of metal. It is thus the case that no hammer is a tool.",
+    "quasar_full": "s1 (Abstraction): \nLet X = tools, Y = things that can be described as being made of metal, Z = hammer.\nThe syllogism becomes: All X are Y, No Z is Y, No Z is X.\n\ns2 (Formalisation): \nAll X are Y, ¬Z is Y, ¬Z is X.\n\ns3 (Explanation): \nThe conclusion \"No Z is X\" logically follows from the premises, as the premises state that all X are Y and no Z is Y, so it's consistent to conclude that no Z is X.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "All X are Y, ¬Z is Y, ¬Z is X.",
+    "quasar_answer": true
+  },
+  "0ef838e7-a27c-4f33-a852-6dd37e9b0d62": {
+    "syllogism": "Anything that is a chair is a liquid. Anything that is a chair is a gas. Consequently, some gases are liquids.",
+    "quasar_full": "s1 (Abstraction): \nLet X = chair, Y = liquid, Z = gas.\nThe syllogism becomes: \nAnything that is X is Y. \nAnything that is X is Z.\n\ns2 (Formalisation): \nAll X are Y. \nAll X are Z.\n\ns3 (Explanation): \nThe premises are contradictory, as X cannot be both a liquid and a gas. \n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are Y. \nAll X are Z.",
+    "quasar_answer": false
+  },
+  "9c7f3e50-75b6-44dd-8e8f-46b62d37014f": {
+    "syllogism": "There is nothing that is a cat that is also a dog. It is a fact that no fish are dogs. Therefore, it follows that some fish are cats.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"cat,\" Y be \"dog,\" and Z be \"fish.\"\n\ns2 (Formalisation): \nThe symbolic structure is: \n1. All X are not Y.\n2. All Z are not Y.\n∴ Some Z are X.\n\ns3 (Explanation): \nThe conclusion \"Some Z are X\" does not logically follow from the premises. The premises only state that cats and fish are not dogs, but they do not provide any information about the relationship between cats and fish.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "The symbolic structure is: \n1. All X are not Y.\n2. All Z are not Y.\n∴ Some Z are X.",
+    "quasar_answer": false
+  },
+  "e98ebcf8-9497-4cfd-8a0e-c59427714746": {
+    "syllogism": "The category of birds and the category of cars are mutually exclusive. Every single car is a sparrow. It is necessarily true that some sparrows are not birds.",
+    "quasar_full": "s1 (Abstraction): \nLet X = birds, Y = cars, Z = sparrows.\n\ns2 (Formalisation): \n1. All X (birds) and Y (cars) are mutually exclusive.\n2. All Y (cars) are Z (sparrows).\n3. It is necessarily true that some Z (sparrows) are not X (birds).\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The second premise states that every car is a sparrow, which means all cars are birds (since sparrows are birds). This contradicts the first premise that birds and cars are mutually exclusive.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "1. All X (birds) and Y (cars) are mutually exclusive.\n2. All Y (cars) are Z (sparrows).\n3. It is necessarily true that some Z (sparrows) are not X (birds).",
+    "quasar_answer": false
+  },
+  "dbb022c6-1f59-4404-8769-903e6924ccf0": {
+    "syllogism": "All elephants can be described as mammals. All elephants can be described as large animals. It is therefore true that there are large animals which are mammals.",
+    "quasar_full": "s1 (Abstraction): \nLet X = elephants, Y = mammals, Z = large animals.\nThe syllogism can be rewritten as: All X are Y, All X are Z.\n\ns2 (Formalisation): \nThe formal symbolic structure is: \nAll X are Y, All X are Z, ∴ There are Z which are Y.\n\ns3 (Explanation): \nThe conclusion logically follows from the premises because if all elephants are mammals and all elephants are large animals, it is true that there are large animals which are mammals.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "The formal symbolic structure is: \nAll X are Y, All X are Z, ∴ There are Z which are Y.",
+    "quasar_answer": true
+  },
+  "1a0094de-3636-48cb-8801-17717a2b9788": {
+    "syllogism": "All things which are poets are writers. All things which are poets are creative people. It follows that some creative people are writers.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"things which are poets\", Y be \"writers\", and Z be \"creative people\".\n\ns2 (Formalisation): \nAll X are Y (All things which are poets are writers)\nAll X are Z (All things which are poets are creative people)\n∴ Some Z are Y (It follows that some creative people are writers)\n\ns3 (Explanation): \nThe conclusion follows logically from the premises because the first two premises establish a universal relationship between X and Y, and between X and Z. Since X is a subset of Z, the conclusion that some Z are Y is logically valid.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "All X are Y (All things which are poets are writers)\nAll X are Z (All things which are poets are creative people)\n∴ Some Z are Y (It follows that some creative people are writers)",
+    "quasar_answer": true
+  },
+  "735f9cfe-73ba-443d-bc47-929bdf348afa": {
+    "syllogism": "It is the case that some musicians are singers. It is also true that some dancers are musicians. From these statements, one can conclude that some dancers are singers.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"musicians,\" Y be \"singers,\" and Z be \"dancers.\"\n\ns2 (Formalisation): \nPremise 1: Some X are Y (∃X Y)\nPremise 2: Some Z are X (∃Z X)\nConclusion: Some Z are Y (∃Z Y)\n\ns3 (Explanation): \nThe conclusion logically follows from the premises. If some dancers are musicians and some musicians are singers, then it is reasonable to conclude that some dancers are singers.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "Premise 1: Some X are Y (∃X Y)\nPremise 2: Some Z are X (∃Z X)\nConclusion: Some Z are Y (∃Z Y)",
+    "quasar_answer": true
+  },
+  "88163ca8-bd47-4ec6-bc84-efc5923fa8fb": {
+    "syllogism": "There are no mammals that are insects. It is also true that no dogs are insects. Therefore, it is argued that there are no dogs which are mammals.",
+    "quasar_full": "s1 (Abstraction): \nLet X = mammals, Y = insects, Z = dogs.\nThe syllogism can be rewritten as: There are no X that are Y. No Z are Y. Therefore, there are no Z that are X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: \n∀X ¬(X ∩ Y), ∀Z ¬(Z ∩ Y) ∴ ∀Z ¬(Z ∩ X)\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that there are no mammals that are insects and no dogs that are insects, but this does not imply that there are no dogs that are mammals. Dogs can still be mammals without being insects.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: \n∀X ¬(X ∩ Y), ∀Z ¬(Z ∩ Y) ∴ ∀Z ¬(Z ∩ X)",
+    "quasar_answer": false
+  },
+  "cc459699-0aa1-483e-9c3b-776b127f0404": {
+    "syllogism": "It is not the case that every single vegetable is a carrot. Every vegetable is a food. Thus, it can be concluded that some foods are not carrots.",
+    "quasar_full": "s1 (Abstraction): \nLet X = vegetable, Y = carrot, Z = food.\nThe syllogism becomes: It is not the case that every X is a Y. Every X is a Z.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ¬∀X Y, ∀X Z.\n\ns3 (Explanation): \nThe first premise states that not all vegetables are carrots, but the second premise states that all vegetables are foods. This does not logically lead to the conclusion that some foods are not carrots, as the conclusion is about the relationship between foods and carrots, not between vegetables and carrots.\n\ns4 (Answering): The answer is: invalid.",
+    "quasar_s2": "The formal symbolic structure is: ¬∀X Y, ∀X Z.",
+    "quasar_answer": false
+  },
+  "ed6cc81e-e798-478d-b910-230cba6c40a7": {
+    "syllogism": "There is no object with a screen that is an electronic device. Not a single thing that is a laptop is an object with a screen. From this, we can deduce that some laptops are not electronic devices.",
+    "quasar_full": "s1 (Abstraction): \nLet X = object with a screen, Y = electronic device, Z = laptop.\n \ns2 (Formalisation): \nAll X are not Y. No Z is X.\n\ns3 (Explanation): \nThe conclusion \"some laptops are not electronic devices\" contradicts the formalisation, which states \"no Z is X\" (i.e., no laptop is an object with a screen). The conclusion cannot be logically deduced from the premises.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are not Y. No Z is X.",
+    "quasar_answer": false
+  },
+  "5cc8a10c-4c9e-4878-ba9e-691ae2f34c8d": {
+    "syllogism": "Anything that is a chair is a piece of furniture. No piece of furniture is a table. This leads to the conclusion that no table is a chair.",
+    "quasar_full": "s1 (Abstraction): \nLet X = chair, Y = piece of furniture, Z = table.\nThe syllogism can be rewritten as: \nAnything that is a chair (X) is a piece of furniture (Y). \nNo piece of furniture (Y) is a table (Z).\n\ns2 (Formalisation): \nAll X are Y.\nNo Y is Z.\n\ns3 (Explanation): \nThe conclusion \"no table is a chair\" is not logically implied by the premises. The premises only state that chairs are furniture and no furniture is a table, but they do not provide information about tables being chairs.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are Y.\nNo Y is Z.",
+    "quasar_answer": false
+  },
+  "2043e1ac-7595-40bd-8c69-a263b6c20747": {
+    "syllogism": "Anything that is air is not a gas. Oxygen is all things that are air. Consequently, some oxygen is not a gas.",
+    "quasar_full": "s1 (Abstraction): \nLet X = air, Y = gas, Z = oxygen.\nThe syllogism becomes: Anything that is X is not a Y. Z is all X. Consequently, some Z is not a Y.\n\ns2 (Formalisation): \nAll X are not Y. ∀x (X(x) → ¬Y(x))\n∀x (Z(x) → X(x))\n∴ ∃x (Z(x) ∧ ¬Y(x))\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The first premise states that anything that is X (air) is not a Y (gas), but the second premise states that Z (oxygen) is all X (air). This does not imply that some Z (oxygen) is not a Y (gas), because oxygen is a gas.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are not Y. ∀x (X(x) → ¬Y(x))\n∀x (Z(x) → X(x))\n∴ ∃x (Z(x) ∧ ¬Y(x))",
+    "quasar_answer": false
+  },
+  "9d5d2453-b206-4a17-8897-53ceaaa8b63a": {
+    "syllogism": "There is no mammal that is a cat. No cats are dogs whatsoever. Consequently, it can be concluded that all dogs are mammals.",
+    "quasar_full": "s1 (Abstraction): \nLet X = mammal, Y = cat, Z = dog.\n\ns2 (Formalisation): \n1. All X are not Y.\n2. All Y are not Z.\n∴ All Z are X.\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that there is no mammal that is a cat and no cats are dogs, but it does not provide any information about dogs being mammals.\n\ns4 (Answering): \nThe answer is: invalid.",
+    "quasar_s2": "1. All X are not Y.\n2. All Y are not Z.\n∴ All Z are X.",
+    "quasar_answer": false
+  },
+  "25b7dd4a-82d4-45dd-907d-c8bfa77c5dab": {
+    "syllogism": "Not a single large machine is a vehicle. It is known that a portion of trucks are large machines. This confirms that a number of trucks are not vehicles.",
+    "quasar_full": "s1 (Abstraction): \nLet X = large machine, Y = vehicle, Z = truck.\nThe syllogism can be rewritten as: Not all X are Y, Some Z are X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: \n1. ¬∀X Y (Not all X are Y)\n2. ∃Z X (Some Z are X)\n∴ ∃Z ¬Y (Conclusion: Some Z are not Y)\n\ns3 (Explanation): \nThe conclusion \"Some Z are not Y\" logically follows from the premises. If some trucks are large machines and no large machine is a vehicle, then some trucks are not vehicles.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "The formal symbolic structure is: \n1. ¬∀X Y (Not all X are Y)\n2. ∃Z X (Some Z are X)\n∴ ∃Z ¬Y (Conclusion: Some Z are not Y)",
+    "quasar_answer": true
+  },
+  "094f2f4f-36f6-4dcf-b703-d4b12effbc30": {
+    "syllogism": "It is true that some crocodiles are furniture. Anything that is a crocodile is a reptile. Consequently, it must be the case that some reptiles are furniture.",
+    "quasar_full": "s1 (Abstraction): \nLet X = crocodiles, Y = furniture, Z = reptiles.\n\ns2 (Formalisation): \nAll X are Z (All crocodiles are reptiles).\nSome X are Y (Some crocodiles are furniture).\n∴ Some Z are Y (∴ Some reptiles are furniture).\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The first premise states that all crocodiles are reptiles, but the second premise states that some crocodiles are furniture, which does not imply that some reptiles are furniture.\n\ns4 (Answering): \nThe answer is: invalid.",
+    "quasar_s2": "All X are Z (All crocodiles are reptiles).\nSome X are Y (Some crocodiles are furniture).\n∴ Some Z are Y (∴ Some reptiles are furniture).",
+    "quasar_answer": false
+  },
+  "d605c2e9-4adb-45b7-9871-5c38fa7cb52c": {
+    "syllogism": "A living being is never able to speak. Every human is a living being. Therefore, no human is able to speak.",
+    "quasar_full": "s1 (Abstraction): \nLet X = living being, Y = able to speak, Z = human.\nThe syllogism becomes: \nA living being is never Y. Every human is an X. Therefore, no human is Y.\n\ns2 (Formalisation): \nAll X are not Y. All Z are X. ∴ No Z are Y.\n\ns3 (Explanation): \nThe conclusion follows logically from the premises. If all living beings are unable to speak and all humans are living beings, then it logically follows that no humans are able to speak.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "All X are not Y. All Z are X. ∴ No Z are Y.",
+    "quasar_answer": true
+  },
+  "03f61ab2-4d2d-4bef-bbf7-93147dd49130": {
+    "syllogism": "Novels are in no way non-fiction books. Anything that is a novel is a book. It's the case that some books are not non-fiction books.",
+    "quasar_full": "s1 (Abstraction): \nLet X = novels, Y = non-fiction books, Z = books.\nSo, the syllogism becomes: \nNovels are in no way non-fiction books. \nAnything that is a novel is a book. \nIt's the case that some books are not non-fiction books.\n\ns2 (Formalisation): \n1. All X are not Y.\n2. All X are Z.\n3. ∃Z (not Y Z)\n\ns3 (Explanation): \nFrom the premises, we can conclude that some books (Z) are not non-fiction books (Y), which is what the third premise states. The first premise tells us that novels (X) are not non-fiction books (Y), and the second premise tells us that novels (X) are books (Z). Therefore, the conclusion logically follows from the premises.\n\ns4 (Answering): The answer is: valid",
+    "quasar_s2": "1. All X are not Y.\n2. All X are Z.\n3. ∃Z (not Y Z)",
+    "quasar_answer": true
+  },
+  "a72b459b-ada0-479b-9289-7df3a908349b": {
+    "syllogism": "Nothing that is a planet can be a celestial body. Everything that is the Earth is a planet. It can therefore be concluded that no Earths are celestial bodies.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"a planet,\" Y be \"a celestial body,\" and Z be \"the Earth.\"\n\ns2 (Formalisation): \nAll X are not Y. All Z is X. ∴ No Z are Y.\n\ns3 (Explanation): \nThe conclusion follows logically from the premises. If nothing that is a planet can be a celestial body, and the Earth is a planet, then it cannot be a celestial body.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "All X are not Y. All Z is X. ∴ No Z are Y.",
+    "quasar_answer": true
+  },
+  "343a5a3e-16c8-4c63-b883-052f22ea3000": {
+    "syllogism": "Every single magazine is a periodical. Some letters are not periodicals. This logically leads to the conclusion that some letters are not magazines.",
+    "quasar_full": "s1 (Abstraction): \nLet X = magazine, Y = periodical, Z = letter.\nThe syllogism becomes: Every X is Y, Some Z are not Y.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∀X(X → Y) ∴ ∃Z(Z ∧ ¬Y)\n\ns3 (Explanation): \nThe conclusion \"some letters are not magazines\" does not logically follow from the premises. The premises only state that some letters are not periodicals, but they do not provide any information about magazines.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: ∀X(X → Y) ∴ ∃Z(Z ∧ ¬Y)",
+    "quasar_answer": false
+  },
+  "70649005-03c7-40f6-88b1-bc87f97c5429": {
+    "syllogism": "There are no dogs which are cats. Some cat is a feline. It follows that no feline is a dog.",
+    "quasar_full": "s1 (Abstraction): \nLet X = dog, Y = cat, Z = feline.\nThe syllogism becomes: There are no X which are Y. Some Y is Z. It follows that no Z is X.\n\ns2 (Formalisation): \nThe formal symbolic structure is:\n1. ∀x (¬(X(x) ∧ Y(x)))\n2. ∃y (Y(y) ∧ Z(y))\n3. ∴ ∀z (Z(z) → ¬X(z))\n\ns3 (Explanation): \nThe conclusion follows logically from the premises. If there are no dogs which are cats, and some cat is a feline, then it logically follows that no feline is a dog.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "The formal symbolic structure is:\n1. ∀x (¬(X(x) ∧ Y(x)))\n2. ∃y (Y(y) ∧ Z(y))\n3. ∴ ∀z (Z(z) → ¬X(z))",
+    "quasar_answer": true
+  },
+  "7fd6b868-00b7-4778-8176-144c3421970d": {
+    "syllogism": "All objects that are chairs are clouds. It is true that no cloud is a piece of furniture. It follows from this that no piece of furniture is a chair.",
+    "quasar_full": "s1 (Abstraction): \nLet X = objects that are chairs, Y = clouds, Z = pieces of furniture.\nThe syllogism becomes: All X are Y, It is true that no Y is Z.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∀x (X(x) → Y(x)), ∀y (Y(y) → ¬Z(y))\nConclusion: ∀z (Z(z) → ¬X(z))\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that all chairs are clouds and no clouds are furniture, but this does not imply that no furniture is a chair.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: ∀x (X(x) → Y(x)), ∀y (Y(y) → ¬Z(y))\nConclusion: ∀z (Z(z) → ¬X(z))",
+    "quasar_answer": false
+  },
+  "56283415-6c0a-42e6-9207-a37f1ed5cb23": {
+    "syllogism": "Any object that is a bridge is a fish. The Golden Gate is not fish. This implies that the Golden Gate is not bridge.",
+    "quasar_full": "s1 (Abstraction): \nLet X = object that is a bridge, Y = fish, Z = Golden Gate.\nThe syllogism becomes: Any X is Y, Z is not Y.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∀x (X(x) → Y(x)) ∧ ¬Y(Z).\n\ns3 (Explanation): \nThe conclusion \"The Golden Gate is not a bridge\" does not logically follow from the premises. The premises state that any bridge is a fish, but they do not state that the Golden Gate is a bridge.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: ∀x (X(x) → Y(x)) ∧ ¬Y(Z).",
+    "quasar_answer": false
+  },
+  "196f3b9f-739b-45c8-b515-9009dbd14670": {
+    "syllogism": "Anything which is a coffee is a liquid. Anything which is a tea is a liquid. As a result, some tea is not coffee.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"coffee\", Y be \"liquid\", Z be \"tea\".\n\ns2 (Formalisation): \nAll X are Y (All coffee is a liquid).\nAll Z are Y (All tea is a liquid).\n∴ Some Z is not X (Some tea is not coffee).\n\ns3 (Explanation): \nThe conclusion \"Some Z is not X\" does not logically follow from the premises. The premises state that all coffee and all tea are liquids, but they do not provide any information about the relationship between coffee and tea.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are Y (All coffee is a liquid).\nAll Z are Y (All tea is a liquid).\n∴ Some Z is not X (Some tea is not coffee).",
+    "quasar_answer": false
+  },
+  "a3a39ff5-8c7c-49bf-b23f-50abe575a8f0": {
+    "syllogism": "There are no dogs that are cats. There are no cats that are animals. Thus, a portion of animals are dogs.",
+    "quasar_full": "s1 (Abstraction): \nLet X = dogs, Y = cats, Z = animals.\n\ns2 (Formalisation): \nAll X are not Y. \nAll Y are not Z. \n∴ Some Z are X.\n\ns3 (Explanation): \nThe conclusion \"Some Z are X\" does not logically follow from the premises. The premises state that there are no dogs that are cats and no cats that are animals, but this does not imply that any animals are dogs.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "All X are not Y. \nAll Y are not Z. \n∴ Some Z are X.",
+    "quasar_answer": false
+  },
+  "556a300e-0638-4b85-955a-f1d3b497523a": {
+    "syllogism": "It is not true that any sky is blue. There is no car that is a sky. This leads to the conclusion that no car is blue.",
+    "quasar_full": "s1 (Abstraction): \nLet X = car, Y = blue, Z = sky\nThe syllogism becomes: It is not true that any sky is blue. There is no car that is a sky. This leads to the conclusion that no car is blue.\n\ns2 (Formalisation): \nLet P1: ¬∀Z Y (sky Z → blue Z)\nP2: ¬∃X (X is a Z)\nC: ¬∀X Y (car X → blue X)\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The first premise states that no sky is blue, but it does not provide any information about cars. The second premise states that there is no car that is a sky, but it does not imply anything about the color of cars.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "Let P1: ¬∀Z Y (sky Z → blue Z)\nP2: ¬∃X (X is a Z)\nC: ¬∀X Y (car X → blue X)",
+    "quasar_answer": false
+  },
+  "6b72dcd6-fd40-49f2-ad05-ac7cf319b4dc": {
+    "syllogism": "There are no fruits which are planets. There is no planet that is a meat. It must be concluded that some meats are not fruits.",
+    "quasar_full": "s1 (Abstraction): \nLet X = fruits, Y = planets, Z = meats.\n\ns2 (Formalisation): \nAll X are not Y. \nAll Y are not Z.\n\ns3 (Explanation): \nThe conclusion \"some Z are not X\" does not logically follow from the premises. The premises only state that there are no X that are Y and no Y that are Z, but they do not provide any information about the relationship between Z and X.\n\ns4 (Answering): \nThe conclusion does not logically follow from the premises, so the syllogism is invalid.",
+    "quasar_s2": "All X are not Y. \nAll Y are not Z.",
+    "quasar_answer": false
+  },
+  "295d89e2-51ff-4b93-beb1-02a71e5210ac": {
+    "syllogism": "Anything that is a rock is not a living thing. A portion of the things that are rocks are also stones. From this, we can conclude that some stones are not living things.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"a rock,\" Y be \"a living thing,\" and Z be \"a stone.\"\n\ns2 (Formalisation): \nAll X (rocks) are not Y (living things).\nSome Z (stones) are X (rocks).\n\ns3 (Explanation): \nThe conclusion \"some stones are not living things\" follows logically from the premises. If all rocks are not living things and some stones are rocks, then it logically follows that some stones are not living things.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "All X (rocks) are not Y (living things).\nSome Z (stones) are X (rocks).",
+    "quasar_answer": true
+  },
+  "cd5fb935-7363-45b4-ab10-50fa485447c9": {
+    "syllogism": "A number of birds are penguins. All penguins are flightless animals. Consequently, some flightless animals are birds.",
+    "quasar_full": "s1 (Abstraction): \nLet X = birds, Y = penguins, Z = flightless animals.\n\ns2 (Formalisation): \nAll X are Y (All birds are penguins).\nAll Y are Z (All penguins are flightless animals).\n∴ Some Z are X (Consequently, some flightless animals are birds).\n\ns3 (Explanation): \nThe conclusion follows logically from the premises. If all penguins are flightless animals, and some birds are penguins, then some flightless animals must be birds.\n\ns4 (Answering): \nThe answer is: valid.",
+    "quasar_s2": "All X are Y (All birds are penguins).\nAll Y are Z (All penguins are flightless animals).\n∴ Some Z are X (Consequently, some flightless animals are birds).",
+    "quasar_answer": true
+  },
+  "6d113ce6-4d1e-486c-a02c-92bc4b79d930": {
+    "syllogism": "Every river is a body of water. No mountains are included in the category of bodies of water. It is the case that some mountains are not rivers.",
+    "quasar_full": "s1 (Abstraction): \nLet X = river, Y = body of water, Z = mountain\nSo, the syllogism becomes: Every X is Y, No Z is Y, Some Z are not X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∀X Y, ∀Z ¬Y, ∃Z ¬X\n\ns3 (Explanation): \nThe conclusion \"Some Z are not X\" logically follows from the premises, as the premises state that all X are Y and no Z are Y, implying that no Z can be X.\n\ns4 (Answering): The answer is: valid",
+    "quasar_s2": "The formal symbolic structure is: ∀X Y, ∀Z ¬Y, ∃Z ¬X",
+    "quasar_answer": true
+  },
+  "a27bfbf5-54dd-47d6-904b-d999d045fd7d": {
+    "syllogism": "There is nothing that is a fruit that is also a baked good. Not one baked good is a rock. As a result, no rock is a fruit.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"fruit,\" Y be \"baked good,\" and Z be \"rock.\"\n\ns2 (Formalisation): \nAll X are not Y. \nNo Y is Z.\n\ns3 (Explanation): \nThe conclusion \"no Z is X\" logically follows from the premises. If nothing is both X and Y, and no Y is Z, then it's reasonable to conclude that no Z is X.\n\ns4 (Answering): The answer is: valid",
+    "quasar_s2": "All X are not Y. \nNo Y is Z.",
+    "quasar_answer": true
+  },
+  "1a8460fa-6c7c-4118-8610-9fab85aa6c32": {
+    "syllogism": "It is the case that no amphibian is a bird. All frogs fall under the category of amphibians. It logically follows that no frogs are birds.",
+    "quasar_full": "s1 (Abstraction): \nLet X = amphibian, Y = bird, Z = frog.\nThe syllogism can be rewritten as: No X is Y, All Z are X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: \n1. ∀x (X(x) → ¬Y(x)) (No X is Y)\n2. ∀z (Z(z) → X(z)) (All Z are X)\n∴ ∀z (Z(z) → Y(z)) (Conclusion: No frogs are birds)\n\ns3 (Explanation): \nThe conclusion follows logically from the premises. If all frogs are amphibians and no amphibians are birds, then it logically follows that no frogs are birds.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "The formal symbolic structure is: \n1. ∀x (X(x) → ¬Y(x)) (No X is Y)\n2. ∀z (Z(z) → X(z)) (All Z are X)\n∴ ∀z (Z(z) → Y(z)) (Conclusion: No frogs are birds)",
+    "quasar_answer": true
+  },
+  "dbe92bc3-f074-4d82-ac6b-fcfaca3a773a": {
+    "syllogism": "Not a single person who is an athlete is also a person who is non-sporty. Of all the students, some of them are non-sporty people. It is necessarily true that some students are not athletes.",
+    "quasar_full": "s1 (Abstraction): \nLet X = person who is an athlete, \nY = person who is non-sporty, \nZ = student.\n\ns2 (Formalisation): \nPremise 1: All X are not Y (All athletes are not non-sporty)\nPremise 2: Some Z are Y (Some students are non-sporty)\nConclusion: Some Z are not X (Some students are not athletes)\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The first premise only tells us about the relationship between athletes and non-sporty people, but it does not provide any information about students. We cannot infer anything about students from the given premises.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "Premise 1: All X are not Y (All athletes are not non-sporty)\nPremise 2: Some Z are Y (Some students are non-sporty)\nConclusion: Some Z are not X (Some students are not athletes)",
+    "quasar_answer": false
+  },
+  "fd43035c-045c-4f27-8238-c6c51fbdd640": {
+    "syllogism": "Every single vertebrate has a spine. All things that are human are vertebrates. At least some humans are things with a spine.",
+    "quasar_full": "s1 (Abstraction): \nLet X = vertebrates, Y = things that are human, Z = things with a spine.\n \ns2 (Formalisation): \nAll X are Y (Every single vertebrate has a spine -> Every single vertebrate is human)\nAll Y are X (All things that are human are vertebrates)\n∴ Some Y are Z (At least some humans are things with a spine)\n\ns3 (Explanation): \nThe conclusion follows logically from the premises. If all vertebrates are human and all humans are vertebrates, then it logically follows that at least some humans are vertebrates, which means they have a spine.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "All X are Y (Every single vertebrate has a spine -> Every single vertebrate is human)\nAll Y are X (All things that are human are vertebrates)\n∴ Some Y are Z (At least some humans are things with a spine)",
+    "quasar_answer": true
+  },
+  "1f605900-fb2f-41f7-9191-0d1e08b8122e": {
+    "syllogism": "It is not the case that sodas are water. All of the water that exists is a beverage. Some of the beverages that exist are not sodas.",
+    "quasar_full": "s1 (Abstraction): \nLet X = sodas, Y = water, Z = beverages.\n\ns2 (Formalisation): \n1. It is not the case that X are Y.\n2. All Y are Z.\n3. Some Z are not X.\n\ns3 (Explanation): \nThe conclusion does not follow logically from the premises. The premises do not provide any information about the relationship between sodas and beverages, so we cannot conclude anything about the existence of non-soda beverages.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "1. It is not the case that X are Y.\n2. All Y are Z.\n3. Some Z are not X.",
+    "quasar_answer": false
+  },
+  "0e5eccac-e294-42b0-96eb-f34acf0ceb1a": {
+    "syllogism": "Anything which is a coffee is a liquid. Anything which is a water is a liquid. As a result, some water is not coffee.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"coffee\", Y be \"liquid\", Z be \"water\".\n\ns2 (Formalisation): \nAll X are Y (All coffee is a liquid).\nAll Z are Y (All water is a liquid).\n∴ Some Z is not X (Some water is not coffee).\n\ns3 (Explanation): \nThe conclusion \"Some Z is not X\" does not logically follow from the premises. The premises state that all coffee is a liquid and all water is a liquid, but they do not provide any information about the relationship between water and coffee.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "All X are Y (All coffee is a liquid).\nAll Z are Y (All water is a liquid).\n∴ Some Z is not X (Some water is not coffee).",
+    "quasar_answer": false
+  },
+  "34346def-8f46-46dc-892b-5dc199478f4c": {
+    "syllogism": "Every single pencil is made of lead. There are some writing instruments that are pencils. This means that some writing instruments are made of lead.",
+    "quasar_full": "s1 (Abstraction): \nLet X = single pencil, Y = made of lead, Z = writing instrument\nThe syllogism can be rewritten as: Every X is Y, Some Z are X.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∀X(X→Y) ∃Z(Z→X)\n\ns3 (Explanation): \nThe conclusion \"Some Z are Y\" logically follows from the premises \"Every X is Y\" and \"Some Z are X\". If every X is Y and some Z are X, then some Z must be Y.\n\ns4 (Answering): The answer is: valid",
+    "quasar_s2": "The formal symbolic structure is: ∀X(X→Y) ∃Z(Z→X)",
+    "quasar_answer": true
+  },
+  "8c0d6906-7d13-4dfa-992e-e6535c337f67": {
+    "syllogism": "It is the case that no reptile is a bird. It is also not the case that any bird is a mammal. Thus, every single mammal is not a reptile.",
+    "quasar_full": "s1 (Abstraction): \nLet X = reptile, Y = bird, Z = mammal.\n\ns2 (Formalisation): \nPremise 1: ∀x (Reptile(x) → ¬Bird(x))\nPremise 2: ∀x (Bird(x) → ¬Mammal(x))\nConclusion: ∀x (Mammal(x) → ¬Reptile(x))\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises state that no reptile is a bird and no bird is a mammal, but they do not provide any information about the relationship between mammals and reptiles.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "Premise 1: ∀x (Reptile(x) → ¬Bird(x))\nPremise 2: ∀x (Bird(x) → ¬Mammal(x))\nConclusion: ∀x (Mammal(x) → ¬Reptile(x))",
+    "quasar_answer": false
+  },
+  "3b001a4a-e30b-48c7-bebb-2ce02b06637f": {
+    "syllogism": "There are some stones that are not light. There are no feathers that are stones. Consequently, every feather is light.",
+    "quasar_full": "s1 (Abstraction): \nLet X = stones, Y = light, Z = feathers.\n\ns2 (Formalisation): \nAll X are not Y. \nNo Z are X. \n∴ All Z are Y.\n\ns3 (Explanation): \nThe conclusion does not logically follow from the premises. The premises only provide information about stones and feathers, but the conclusion makes a claim about all feathers, which is not supported.\n\ns4 (Answering): \nThe answer is: invalid",
+    "quasar_s2": "All X are not Y. \nNo Z are X. \n∴ All Z are Y.",
+    "quasar_answer": false
+  },
+  "8e2668db-efc8-4ce6-8687-ac28fcb32e35": {
+    "syllogism": "There are no spiders that are mammals. No insects are considered spiders. Some insects are not mammals.",
+    "quasar_full": "s1 (Abstraction): \nLet X = spiders, Y = mammals, Z = insects.\n\ns2 (Formalisation): \n1. All X are not Y (All spiders are not mammals).\n2. All Z are not X (No insects are spiders).\n3. Some Z are not Y (Some insects are not mammals).\n\ns3 (Explanation): \nThe conclusion logically follows from the premises. If there are no spiders that are mammals and no insects are spiders, then it logically follows that some insects are not mammals.\n\ns4 (Answering): \nThe answer is: valid.",
+    "quasar_s2": "1. All X are not Y (All spiders are not mammals).\n2. All Z are not X (No insects are spiders).\n3. Some Z are not Y (Some insects are not mammals).",
+    "quasar_answer": true
+  },
+  "332a0a85-30f9-4341-b27c-e30197e0b994": {
+    "syllogism": "The set of animals and the set of plants are mutually exclusive. The group of plants and the group of cats are disjoint. A certain number of cats are not animals.",
+    "quasar_full": "s1 (Abstraction): \nLet X be \"animals,\" Y be \"plants,\" and Z be \"cats.\"\n\ns2 (Formalisation): \nPremise 1: ∀x (X(x) → ¬Y(x)) and ∀x (Y(x) → ¬X(x)) (mutually exclusive)\nPremise 2: ∀x (Y(x) → ¬Z(x)) and ∀x (Z(x) → ¬Y(x)) (disjoint)\nPremise 3: ∃x (Z(x) ∧ ¬X(x)) (some cats are not animals)\n\nConclusion: ∃x (Z(x) ∧ ¬X(x)) (some cats are not animals)\n\ns3 (Explanation): \nThe conclusion is the same as premise 3, which is given. The premises provide no new information, so the conclusion logically follows.\n\ns4 (Answering): \nThe answer is: valid",
+    "quasar_s2": "Premise 1: ∀x (X(x) → ¬Y(x)) and ∀x (Y(x) → ¬X(x)) (mutually exclusive)\nPremise 2: ∀x (Y(x) → ¬Z(x)) and ∀x (Z(x) → ¬Y(x)) (disjoint)\nPremise 3: ∃x (Z(x) ∧ ¬X(x)) (some cats are not animals)\n\nConclusion: ∃x (Z(x) ∧ ¬X(x)) (some cats are not animals)",
+    "quasar_answer": true
+  },
+  "cd3b3363-37b2-487e-a4ba-f36f26f74703": {
+    "syllogism": "There is no such thing as a building that is a chair. It is also true that no chair is a house. It follows that no house is a building.",
+    "quasar_full": "s1 (Abstraction): \nLet X = building, Y = chair, Z = house.\nThe syllogism becomes: There is no such thing as a X that is a Y. It is also true that no Y is a Z. It follows that no Z is a X.\n\ns2 (Formalisation): \nThe formal symbolic structure is:\n1. ∀x (¬(X(x) ∧ Y(x)))\n2. ∀y (¬Y(y) → ¬Z(y))\n3. ∴ ∀z (¬Z(z) → ¬X(z))\n\ns3 (Explanation): \nThe conclusion follows logically from the premises. The first premise states that no X is a Y. The second premise states that no Y is a Z. Therefore, by transitive property, no Z can be a X.\n\ns4 (Answering): The answer is: valid",
+    "quasar_s2": "The formal symbolic structure is:\n1. ∀x (¬(X(x) ∧ Y(x)))\n2. ∀y (¬Y(y) → ¬Z(y))\n3. ∴ ∀z (¬Z(z) → ¬X(z))",
+    "quasar_answer": true
+  },
+  "eccdb752-fde0-484b-a586-bb90c1c69ad8": {
+    "syllogism": "There are some women who are people. There are no people who are men. Therefore, some men are humans.",
+    "quasar_full": "s1 (Abstraction): \nLet X = women, Y = people, Z = men.\nThe syllogism becomes: There are some X who are Y. There are no Y who are Z.\n\ns2 (Formalisation): \nThe formal symbolic structure is: ∃X(Y(X) ∧ ∀Z¬Y(Z))\n\ns3 (Explanation): \nThe conclusion \"some men are humans\" is equivalent to \"there exists a Z such that Z is human.\" However, the premises do not provide any information about the relationship between men and humans. The premises only relate women to people, and people to men, but do not establish a connection between men and humans.\n\ns4 (Answering): The answer is: invalid",
+    "quasar_s2": "The formal symbolic structure is: ∃X(Y(X) ∧ ∀Z¬Y(Z))",
+    "quasar_answer": false
+  }
+}
