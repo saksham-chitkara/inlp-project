@@ -1,0 +1,482 @@
+nohup: ignoring input
+[Main] Using 3 GPU(s): NVIDIA GeForce GTX 1080 Ti
+  GPU 0: NVIDIA GeForce GTX 1080 Ti (10.9 GB)
+  GPU 1: NVIDIA GeForce GTX 1080 Ti (10.9 GB)
+  GPU 2: NVIDIA GeForce GTX 1080 Ti (10.9 GB)
+
+######################################################################
+  SemEval-2026 Task 11 - Subtask 1: Syllogistic Reasoning (English)
+  Technique 1: Neuro-Symbolic Integration (spaCy fallback)
+  Technique 2: Activation Steering (CAA / K-CAST)
+  Technique 3: QuaSAR Chain-of-Thought (Llama -> XLM-RoBERTa)
+######################################################################
+
+[Main] QuaSAR cache (train): 960 entries OK
+[Main] QuaSAR cache (test): 191 entries OK
+
+======================================================================
+STAGE 1/4: Data Loading & Preprocessing
+======================================================================
+[DataLoader] Loading tokenizer …
+[DataLoader] Loading raw data …
+[DataLoader] Performing stratified train/val split …
+  Train: 865 | Val: 95
+[DataLoader] QuaSAR cache loaded: /ssd_scratch/shubhamcvit/inlp/project/src/subtask1/outputs/quasar_train_cache.json (960 entries)
+[DataLoader] QuaSAR cache loaded: /ssd_scratch/shubhamcvit/inlp/project/src/subtask1/outputs/quasar_test_cache.json (191 entries)
+spaCy model 'en_core_web_sm' not found. Run: python -m spacy download en_core_web_sm
+[DataLoader] Abstractor: QuaSAR (1151 cached) + spaCy fallback.
+[DataLoader] Building datasets …
+[DataLoader] Done. Train batches: 109, Val batches: 3, Test batches: 6
+
+======================================================================
+STAGE 2/4: Model Initialisation
+======================================================================
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 199/199 [00:00<00:00, 6133.47it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: xlm-roberta-base
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[Main] Model parameters: 278,045,186
+[Main] Wrapping model with DataParallel (3 GPUs)
+  Class distribution — valid: 480, invalid: 480
+  Class weights — valid: 1.000, invalid: 1.000
+
+======================================================================
+STAGE 3/4: Fine-Tuning
+======================================================================
+/ssd_scratch/shubhamcvit/inlp/project/src/subtask1/train.py:199: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=use_fp16)
+
+======================================================================
+Starting training: 15 epochs, 109 batches/epoch
+Warmup steps: 163 / 1635 total
+Device: cuda:0  |  FP16: True  |  Grad Accum: 1
+Multi-GPU: 3 GPUs via DataParallel
+======================================================================
+
+/ssd_scratch/shubhamcvit/inlp/project/src/subtask1/train.py:230: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=use_fp16):
+/ssd_scratch/shubhamcvit/inlp/project/venv/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:71: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+  Epoch 1/15  Step   50/109  Loss: 1.2140  AvgLoss: 1.0922  LR: 6.13e-06
+  Epoch 1/15  Step  100/109  Loss: 0.3974  AvgLoss: 0.9873  LR: 1.23e-05
+  Epoch 1/15  Step  109/109  Loss: 0.0399  AvgLoss: 0.9722  LR: 1.34e-05
+
+---------------------------------------------------------------------
+  Epoch 1 complete in 81.3s
+  Train Loss    : 0.9722
+  Val Accuracy  : 50.53%
+  Val TCE       : 50.0000
+  Val Combined  : 10.2450  <- ranking metric
+  [PV=8.3  IV=0.0  PI=100.0  II=95.8]
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.42s/it]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.42s/it]
+  -> New best combined_score: 10.2450 -> checkpoint saved.
+---------------------------------------------------------------------
+
+  Epoch 2/15  Step   50/109  Loss: 0.5346  AvgLoss: 0.9664  LR: 1.95e-05
+  Epoch 2/15  Step  100/109  Loss: 0.6962  AvgLoss: 0.8994  LR: 1.94e-05
+  Epoch 2/15  Step  109/109  Loss: 0.3884  AvgLoss: 0.8743  LR: 1.93e-05
+
+---------------------------------------------------------------------
+  Epoch 2 complete in 79.6s
+  Train Loss    : 0.8743
+  Val Accuracy  : 54.74%
+  Val TCE       : 45.8333
+  Val Combined  : 11.2939  <- ranking metric
+  [PV=100.0  IV=100.0  PI=8.7  II=8.3]
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.40s/it]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.40s/it]
+  -> New best combined_score: 11.2939 -> checkpoint saved.
+---------------------------------------------------------------------
+
+  Epoch 3/15  Step   50/109  Loss: 0.8006  AvgLoss: 0.7819  LR: 1.86e-05
+  Epoch 3/15  Step  100/109  Loss: 0.4138  AvgLoss: 0.6904  LR: 1.79e-05
+  Epoch 3/15  Step  109/109  Loss: 0.1201  AvgLoss: 0.6962  LR: 1.78e-05
+
+---------------------------------------------------------------------
+  Epoch 3 complete in 80.5s
+  Train Loss    : 0.6962
+  Val Accuracy  : 71.58%
+  Val TCE       : 12.5000
+  Val Combined  : 19.8682  <- ranking metric
+  [PV=83.3  IV=58.3  PI=73.9  II=70.8]
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.34s/it]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.34s/it]
+  -> New best combined_score: 19.8682 -> checkpoint saved.
+---------------------------------------------------------------------
+
+  Epoch 4/15  Step   50/109  Loss: 0.2583  AvgLoss: 0.5893  LR: 1.71e-05
+  Epoch 4/15  Step  100/109  Loss: 0.9093  AvgLoss: 0.6020  LR: 1.64e-05
+  Epoch 4/15  Step  109/109  Loss: 1.5625  AvgLoss: 0.6086  LR: 1.63e-05
+
+---------------------------------------------------------------------
+  Epoch 4 complete in 84.6s
+  Train Loss    : 0.6086
+  Val Accuracy  : 69.47%
+  Val TCE       : 27.0833
+  Val Combined  : 16.0256  <- ranking metric
+  [PV=50.0  IV=45.8  PI=100.0  II=83.3]
+  No improvement. Patience: 1/99
+---------------------------------------------------------------------
+
+  Epoch 5/15  Step   50/109  Loss: 0.1132  AvgLoss: 0.4361  LR: 1.56e-05
+  Epoch 5/15  Step  100/109  Loss: 0.6559  AvgLoss: 0.4902  LR: 1.49e-05
+  Epoch 5/15  Step  109/109  Loss: 2.5820  AvgLoss: 0.5257  LR: 1.48e-05
+
+---------------------------------------------------------------------
+  Epoch 5 complete in 88.5s
+  Train Loss    : 0.5257
+  Val Accuracy  : 76.84%
+  Val TCE       : 12.5000
+  Val Combined  : 21.3291  <- ranking metric
+  [PV=87.5  IV=70.8  PI=87.0  II=62.5]
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.40s/it]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.40s/it]
+  -> New best combined_score: 21.3291 -> checkpoint saved.
+---------------------------------------------------------------------
+
+  Epoch 6/15  Step   50/109  Loss: 0.1061  AvgLoss: 0.4109  LR: 1.41e-05
+  Epoch 6/15  Step  100/109  Loss: 0.5794  AvgLoss: 0.3930  LR: 1.35e-05
+  Epoch 6/15  Step  109/109  Loss: 0.0014  AvgLoss: 0.3707  LR: 1.33e-05
+
+---------------------------------------------------------------------
+  Epoch 6 complete in 92.3s
+  Train Loss    : 0.3707
+  Val Accuracy  : 73.68%
+  Val TCE       : 10.0543
+  Val Combined  : 21.6538  <- ranking metric
+  [PV=79.2  IV=70.8  PI=82.6  II=62.5]
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.41s/it]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.41s/it]
+  -> New best combined_score: 21.6538 -> checkpoint saved.
+---------------------------------------------------------------------
+
+  Epoch 7/15  Step   50/109  Loss: 0.0103  AvgLoss: 0.3319  LR: 1.26e-05
+  Epoch 7/15  Step  100/109  Loss: 0.3083  AvgLoss: 0.2699  LR: 1.20e-05
+  Epoch 7/15  Step  109/109  Loss: 0.0005  AvgLoss: 0.2575  LR: 1.18e-05
+
+---------------------------------------------------------------------
+  Epoch 7 complete in 97.1s
+  Train Loss    : 0.2575
+  Val Accuracy  : 72.63%
+  Val TCE       : 8.3333
+  Val Combined  : 22.4616  <- ranking metric
+  [PV=79.2  IV=70.8  PI=78.3  II=62.5]
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.41s/it]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.41s/it]
+  -> New best combined_score: 22.4616 -> checkpoint saved.
+---------------------------------------------------------------------
+
+  Epoch 8/15  Step   50/109  Loss: 0.4993  AvgLoss: 0.2388  LR: 1.12e-05
+  Epoch 8/15  Step  100/109  Loss: 0.1035  AvgLoss: 0.2515  LR: 1.05e-05
+  Epoch 8/15  Step  109/109  Loss: 0.0002  AvgLoss: 0.2450  LR: 1.04e-05
+
+---------------------------------------------------------------------
+  Epoch 8 complete in 105.1s
+  Train Loss    : 0.2450
+  Val Accuracy  : 76.84%
+  Val TCE       : 12.3188
+  Val Combined  : 21.4094  <- ranking metric
+  [PV=70.8  IV=66.7  PI=91.3  II=79.2]
+  No improvement. Patience: 1/99
+---------------------------------------------------------------------
+
+  Epoch 9/15  Step   50/109  Loss: 0.0199  AvgLoss: 0.2001  LR: 9.69e-06
+  Epoch 9/15  Step  100/109  Loss: 0.0017  AvgLoss: 0.1670  LR: 9.01e-06
+  Epoch 9/15  Step  109/109  Loss: 0.0000  AvgLoss: 0.1566  LR: 8.89e-06
+
+---------------------------------------------------------------------
+  Epoch 9 complete in 144.1s
+  Train Loss    : 0.1566
+  Val Accuracy  : 75.79%
+  Val TCE       : 10.4167
+  Val Combined  : 22.0634  <- ranking metric
+  [PV=87.5  IV=70.8  PI=78.3  II=66.7]
+  No improvement. Patience: 2/99
+---------------------------------------------------------------------
+
+  Epoch 10/15  Step   50/109  Loss: 0.0002  AvgLoss: 0.0830  LR: 8.21e-06
+  Epoch 10/15  Step  100/109  Loss: 0.2080  AvgLoss: 0.1187  LR: 7.53e-06
+  Epoch 10/15  Step  109/109  Loss: 0.0000  AvgLoss: 0.1187  LR: 7.40e-06
+
+---------------------------------------------------------------------
+  Epoch 10 complete in 156.7s
+  Train Loss    : 0.1187
+  Val Accuracy  : 76.84%
+  Val TCE       : 14.5833
+  Val Combined  : 20.5120  <- ranking metric
+  [PV=91.7  IV=75.0  PI=78.3  II=62.5]
+  No improvement. Patience: 3/99
+---------------------------------------------------------------------
+
+  Epoch 11/15  Step   50/109  Loss: 0.0471  AvgLoss: 0.1130  LR: 6.73e-06
+  Epoch 11/15  Step  100/109  Loss: 0.0000  AvgLoss: 0.0919  LR: 6.05e-06
+  Epoch 11/15  Step  109/109  Loss: 1.7168  AvgLoss: 0.1079  LR: 5.92e-06
+
+---------------------------------------------------------------------
+  Epoch 11 complete in 169.8s
+  Train Loss    : 0.1079
+  Val Accuracy  : 74.74%
+  Val TCE       : 10.4167
+  Val Combined  : 21.7570  <- ranking metric
+  [PV=83.3  IV=70.8  PI=82.6  II=62.5]
+  No improvement. Patience: 4/99
+---------------------------------------------------------------------
+
+  Epoch 12/15  Step   50/109  Loss: 0.0144  AvgLoss: 0.0144  LR: 5.24e-06
+  Epoch 12/15  Step  100/109  Loss: 0.0001  AvgLoss: 0.0295  LR: 4.57e-06
+  Epoch 12/15  Step  109/109  Loss: 0.0001  AvgLoss: 0.0273  LR: 4.44e-06
+
+---------------------------------------------------------------------
+  Epoch 12 complete in 184.1s
+  Train Loss    : 0.0273
+  Val Accuracy  : 78.95%
+  Val TCE       : 14.5833
+  Val Combined  : 21.0740  <- ranking metric
+  [PV=91.7  IV=75.0  PI=87.0  II=62.5]
+  No improvement. Patience: 5/99
+---------------------------------------------------------------------
+
+  Epoch 13/15  Step   50/109  Loss: 0.0003  AvgLoss: 0.0008  LR: 3.76e-06
+  Epoch 13/15  Step  100/109  Loss: 0.0000  AvgLoss: 0.0035  LR: 3.08e-06
+  Epoch 13/15  Step  109/109  Loss: 0.0000  AvgLoss: 0.0040  LR: 2.96e-06
+
+---------------------------------------------------------------------
+  Epoch 13 complete in 198.1s
+  Train Loss    : 0.0040
+  Val Accuracy  : 74.74%
+  Val TCE       : 12.3188
+  Val Combined  : 20.8228  <- ranking metric
+  [PV=66.7  IV=66.7  PI=91.3  II=75.0]
+  No improvement. Patience: 6/99
+---------------------------------------------------------------------
+
+  Epoch 14/15  Step   50/109  Loss: 0.0000  AvgLoss: 0.0198  LR: 2.28e-06
+  Epoch 14/15  Step  100/109  Loss: 0.0000  AvgLoss: 0.0158  LR: 1.60e-06
+  Epoch 14/15  Step  109/109  Loss: 0.0000  AvgLoss: 0.0145  LR: 1.48e-06
+
+---------------------------------------------------------------------
+  Epoch 14 complete in 213.5s
+  Train Loss    : 0.0145
+  Val Accuracy  : 74.74%
+  Val TCE       : 12.3188
+  Val Combined  : 20.8228  <- ranking metric
+  [PV=70.8  IV=66.7  PI=91.3  II=70.8]
+  No improvement. Patience: 7/99
+---------------------------------------------------------------------
+
+  Epoch 15/15  Step   50/109  Loss: 0.0000  AvgLoss: 0.0054  LR: 8.02e-07
+  Epoch 15/15  Step  100/109  Loss: 0.0001  AvgLoss: 0.0061  LR: 1.22e-07
+  Epoch 15/15  Step  109/109  Loss: 0.0000  AvgLoss: 0.0057  LR: 0.00e+00
+
+---------------------------------------------------------------------
+  Epoch 15 complete in 228.4s
+  Train Loss    : 0.0057
+  Val Accuracy  : 75.79%
+  Val TCE       : 12.3188
+  Val Combined  : 21.1161  <- ranking metric
+  [PV=70.8  IV=66.7  PI=91.3  II=75.0]
+  No improvement. Patience: 8/99
+---------------------------------------------------------------------
+
+
+======================================================================
+Training complete.  Best val combined_score: 22.4616
+Checkpoint saved to: /ssd_scratch/shubhamcvit/inlp/project/src/subtask1/outputs/model_checkpoint
+======================================================================
+
+
+======================================================================
+  BASELINE: Evaluating UNTRAINED XLM-RoBERTa (random classifier head)
+======================================================================
+
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 199/199 [00:00<00:00, 4706.06it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: xlm-roberta-base
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[Predict] Running inference on 191 examples …
+[Predict] 191 predictions saved to /ssd_scratch/shubhamcvit/inlp/project/src/subtask1/outputs/predictions_baseline.json
+          valid=191, invalid=0
+
+============================================================
+  Evaluation Report — Subtask 1
+============================================================
+  Overall Accuracy    : 50.2618%
+  Total Content Effect: 50.0000
+  Combined Score (↑)  : 10.1913  ← ranking metric
+------------------------------------------------------------
+  Subgroup Accuracies:
+    Valid   + Plausible   (PV): 100.00%
+    Valid   + Implausible (IV): 100.00%
+    Invalid + Plausible   (PI): 0.00%
+    Invalid + Implausible (II): 0.00%
+------------------------------------------------------------
+  CE Intra (|PV-IV| + |PI-II|)/2 : 0.0000
+  CE Inter (|PV-PI| + |IV-II|)/2 : 100.0000
+------------------------------------------------------------
+  N predicted: 191  |  N missing: 0
+============================================================
+  Content Effect Legend:
+    PV = Plausible+Valid  IV = Implausible+Valid
+    PI = Plausible+Invalid  II = Implausible+Invalid
+============================================================
+
+[Evaluate] Metrics saved to /ssd_scratch/shubhamcvit/inlp/project/src/subtask1/outputs/eval_results_baseline.json
+
+[Main] Loading best checkpoint from /ssd_scratch/shubhamcvit/inlp/project/src/subtask1/outputs/model_checkpoint …
+
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 199/199 [00:00<00:00, 5083.63it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: xlm-roberta-base
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+/ssd_scratch/shubhamcvit/inlp/project/src/subtask1/model.py:248: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  torch.load(weight_path, map_location="cpu"), strict=False
+
+======================================================================
+  FINE-TUNED: Evaluating fine-tuned model WITHOUT activation steering
+======================================================================
+[Predict] Running inference on 191 examples …
+[Predict] 191 predictions saved to /ssd_scratch/shubhamcvit/inlp/project/src/subtask1/outputs/predictions_pre_steering.json
+          valid=105, invalid=86
+
+============================================================
+  Evaluation Report — Subtask 1
+============================================================
+  Overall Accuracy    : 71.2042%
+  Total Content Effect: 9.3750
+  Combined Score (↑)  : 21.3225  ← ranking metric
+------------------------------------------------------------
+  Subgroup Accuracies:
+    Valid   + Plausible   (PV): 83.33%
+    Valid   + Implausible (IV): 68.75%
+    Invalid + Plausible   (PI): 68.09%
+    Invalid + Implausible (II): 64.58%
+------------------------------------------------------------
+  CE Intra (|PV-IV| + |PI-II|)/2 : 9.0426
+  CE Inter (|PV-PI| + |IV-II|)/2 : 9.7074
+------------------------------------------------------------
+  N predicted: 191  |  N missing: 0
+============================================================
+  Content Effect Legend:
+    PV = Plausible+Valid  IV = Implausible+Valid
+    PI = Plausible+Invalid  II = Implausible+Invalid
+============================================================
+
+[Evaluate] Metrics saved to /ssd_scratch/shubhamcvit/inlp/project/src/subtask1/outputs/eval_results_pre_steering.json
+
+[Analysis] Prediction distribution:
+  Valid:     105  (55.0%)
+  Invalid:    86  (45.0%)
+  Accuracy vs ground truth: 71.20%  (136/191)
+
+======================================================================
+STAGE 3/4: Activation Steering (CAA / K-CAST)
+======================================================================
+[Steering] Collecting activations from training set …
+  Layer 9: D+ (correct predictions)=814, D- (incorrect predictions)=51
+  Layer 10: D+ (correct predictions)=814, D- (incorrect predictions)=51
+  Layer 11: D+ (correct predictions)=814, D- (incorrect predictions)=51
+[Steering] Vectors computed for layers: [9, 10, 11]
+
+[Steering] Grid search over 3 layers × 17 alpha values …
+  ↑ Layer 9 | α=-2.00 | Acc=72.63 | TCE=8.3333 | Combined=22.4616
+
+[Steering] Best: layer=9, α=-2.00, combined=22.4616
+[Steering] Vectors saved to /ssd_scratch/shubhamcvit/inlp/project/src/subtask1/outputs/steering_vectors.pt
+[K-CAST] Applied: layer=9, α=-2.00, k=10
+
+======================================================================
+STAGE 4/4: Inference & Prediction Generation
+======================================================================
+[Predict] Running inference on 191 examples …
+[Predict] 191 predictions saved to /ssd_scratch/shubhamcvit/inlp/project/src/subtask1/outputs/predictions.json
+          valid=107, invalid=84
+
+======================================================================
+EVALUATION (in-process, using ground-truth from test set)
+======================================================================
+
+============================================================
+  Evaluation Report — Subtask 1
+============================================================
+  Overall Accuracy    : 72.2513%
+  Total Content Effect: 11.4583
+  Combined Score (↑)  : 20.5120  ← ranking metric
+------------------------------------------------------------
+  Subgroup Accuracies:
+    Valid   + Plausible   (PV): 87.50%
+    Valid   + Implausible (IV): 68.75%
+    Invalid + Plausible   (PI): 68.09%
+    Invalid + Implausible (II): 64.58%
+------------------------------------------------------------
+  CE Intra (|PV-IV| + |PI-II|)/2 : 11.1259
+  CE Inter (|PV-PI| + |IV-II|)/2 : 11.7908
+------------------------------------------------------------
+  N predicted: 191  |  N missing: 0
+============================================================
+  Content Effect Legend:
+    PV = Plausible+Valid  IV = Implausible+Valid
+    PI = Plausible+Invalid  II = Implausible+Invalid
+============================================================
+
+[Evaluate] Metrics saved to /ssd_scratch/shubhamcvit/inlp/project/src/subtask1/outputs/eval_results.json
+
+[Analysis] Prediction distribution:
+  Valid:     107  (56.0%)
+  Invalid:    84  (44.0%)
+  Accuracy vs ground truth: 72.25%  (138/191)
+
+======================================================================
+  FINAL COMPARISON: Untrained vs Fine-Tuned vs Fine-Tuned + Steering
+======================================================================
+  Metric                         Untrained     Fine-Tuned     + Steering
+  -------------------------------------------------------------------
+  Accuracy                          50.26%         71.20%         72.25%
+  Content Effect (TCE)             50.0000         9.3750        11.4583
+  Combined Score                   10.1913        21.3225        20.5120
+======================================================================
+
+[Main] Full pipeline complete!
+  Predictions → /ssd_scratch/shubhamcvit/inlp/project/src/subtask1/outputs/predictions.json
+  Metrics     → /ssd_scratch/shubhamcvit/inlp/project/src/subtask1/outputs/eval_results.json
