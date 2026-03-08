@@ -1,0 +1,12 @@
+[
+    {"id": "id1", "validity": false},  
+    {"id": "id2", "validity": true},   
+    {"id": "id3", "validity": false}, 
+    {"id": "id4", "validity": false},  
+    {"id": "id5", "validity": true},  
+    {"id": "id6", "validity": true},   
+    {"id": "id7", "validity": false},  
+    {"id": "id8", "validity": true},  
+    {"id": "id9", "validity": true},  
+    {"id": "id10", "validity": true}   
+]

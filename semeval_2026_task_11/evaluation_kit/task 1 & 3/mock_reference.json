@@ -1,0 +1,12 @@
+[
+    {"id": "id1", "validity": false, "plausibility": true},   
+    {"id": "id2", "validity": true, "plausibility": true},    
+    {"id": "id3", "validity": false, "plausibility": false},  
+    {"id": "id4", "validity": true, "plausibility": false},   
+    {"id": "id5", "validity": true, "plausibility": true},    
+    {"id": "id6", "validity": false, "plausibility": true},   
+    {"id": "id7", "validity": false, "plausibility": false},  
+    {"id": "id8", "validity": true, "plausibility": false},   
+    {"id": "id9", "validity": true, "plausibility": true},    
+    {"id": "id10", "validity": false, "plausibility": true}    
+]
