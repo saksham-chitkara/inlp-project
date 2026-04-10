@@ -1,0 +1,53 @@
+# ─── Logic-Driven Extension Configuration ─────────────────────────────────────
+# Subtask 2: Monolingual Syllogistic Reasoning + Premise Identification
+# All hyperparameters are loaded from this file — no hardcoded values elsewhere.
+
+# ─── Model ─────────────────────────────────────────────────────────────────────
+model:
+  name: "xlm-roberta-base"
+  max_seq_len: 384
+  max_premises: 8              # max number of premise slots (pad/truncate)
+  num_labels: 2                # 0 = invalid, 1 = valid
+  dropout_rate: 0.15            # ↑ from 0.15 for better regularization
+  premise_threshold: 0.5       # sigmoid threshold for premise selection
+
+# ─── Contrastive Learning ──────────────────────────────────────────────────────
+contrastive:
+  alpha: 0.5                   # Increased to 0.5 to force structural reasoning and lower TCE
+  cosine_margin: 0.5           # margin for CosineEmbeddingLoss
+
+# ─── Premise Selection ────────────────────────────────────────────────────────
+premise_selection:
+  beta: 0.3                    # Doubled to 0.6 to boost the lagging premise F1
+
+# ─── Training ──────────────────────────────────────────────────────────────────
+training:
+  batch_size: 8
+  eval_batch_size: 24
+  gradient_accumulation_steps: 1   # effective batch size = 16
+  num_epochs: 10               # Reduced from 12 as requested
+  learning_rate: 1.5e-5        # Increased slightly to help the premise scorer converge faster
+  weight_decay: 0.02
+  warmup_ratio: 0.1           # ↑ from 0.1 — gentler initial phase
+  max_grad_norm: 1.0
+  early_stopping_patience: 5   # ↑ from 5 — allows recovery from fluctuations
+  seed: 42
+  validation_split: 0.2
+
+# ─── Paths (relative to project root) ──────────────────────────────────────────
+paths:
+  train_data: "dataset/train_data/subtask 2/generated_train_data.json"
+  test_data: "dataset/test_data/subtask 2/test_data_subtask_2.json"
+  eval_script: "dataset/evaluation_kit/task 2 & 4/evaluation_script.py"
+  output_dir: "src/subtask2/logic-driven-extension/outputs"
+  checkpoints_dir: "src/subtask2/logic-driven-extension/checkpoints"
+  configs_dir: "src/subtask2/logic-driven-extension/configs"
+
+# ─── Parser ────────────────────────────────────────────────────────────────────
+parser:
+  spacy_model: "en_core_web_sm"
+
+# ─── Label Mapping ─────────────────────────────────────────────────────────────
+labels:
+  true: 1
+  false: 0

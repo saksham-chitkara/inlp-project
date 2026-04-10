@@ -1,0 +1,53 @@
+# ─── Logic-Driven Extension Configuration ─────────────────────────────────────
+# Subtask 4: Multilingual Syllogistic Reasoning + Premise Identification
+# All hyperparameters are loaded from this file — no hardcoded values elsewhere.
+
+# ─── Model ─────────────────────────────────────────────────────────────────────
+model:
+  name: "xlm-roberta-base"
+  max_seq_len: 384
+  max_premises: 8              # max number of premise slots (pad/truncate)
+  num_labels: 2                # 0 = invalid, 1 = valid
+  dropout_rate: 0.15
+  premise_threshold: 0.5       # sigmoid threshold for premise selection
+
+# ─── Contrastive Learning ──────────────────────────────────────────────────────
+contrastive:
+  alpha: 0.5                   # weight for contrastive loss: L_CL
+  cosine_margin: 0.5           # margin for CosineEmbeddingLoss
+
+# ─── Premise Selection ────────────────────────────────────────────────────────
+premise_selection:
+  beta: 0.3                    # weight for premise BCE loss: L_premise
+
+# ─── Training ──────────────────────────────────────────────────────────────────
+training:
+  batch_size: 8                # smaller due to contrastive pairs + premise encoding
+  eval_batch_size: 24
+  num_epochs: 10
+  learning_rate: 1.5e-5
+  weight_decay: 0.02
+  warmup_ratio: 0.1
+  max_grad_norm: 1.0
+  early_stopping_patience: 5
+  seed: 42
+  validation_split: 0.25
+  samples_per_lang_per_epoch: 250   # balanced sampling per language per epoch
+
+# ─── Paths (relative to project root) ──────────────────────────────────────────
+paths:
+  train_data: "dataset/train_data/subtask 4/train_data_translated.json"
+  test_data: "dataset/test_data/subtask 4/test_data_subtask_4.json"
+  eval_script: "dataset/evaluation_kit/task 2 & 4/evaluation_script.py"
+  output_dir: "src/subtask4/logic-driven-extension/outputs"
+  checkpoints_dir: "src/subtask4/logic-driven-extension/checkpoints"
+  configs_dir: "src/subtask4/logic-driven-extension/configs"
+
+# ─── Parser ────────────────────────────────────────────────────────────────────
+parser:
+  spacy_model: "en_core_web_sm"
+
+# ─── Label Mapping ─────────────────────────────────────────────────────────────
+labels:
+  true: 1
+  false: 0

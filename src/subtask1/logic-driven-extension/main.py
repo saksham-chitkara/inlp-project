@@ -21,9 +21,9 @@ except ImportError:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--train_data", type=str, default="../DataAugmentation/train_data.json")
-    parser.add_argument("--val_data", type=str, default="../DataAugmentation/train_data.json")
-    parser.add_argument("--test_data", type=str, default="test_data_subtask_1.json") 
+    parser.add_argument("--train_data", type=str, default="../../dataset/train_data/subtask1/train_data.json")
+    parser.add_argument("--val_data", type=str, default="../../dataset/train_data/subtask1/train_data.json")
+    parser.add_argument("--test_data", type=str, default="../../dataset/test_data/subtask1/test_data_subtask_1.json") 
     parser.add_argument("--epochs", type=int, default=10)
     parser.add_argument("--batch_size", type=int, default=8)
     parser.add_argument("--lr", type=float, default=2e-5)
